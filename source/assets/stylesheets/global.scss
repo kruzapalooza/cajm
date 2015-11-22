@@ -1,0 +1,328 @@
+
+@import "header"; 
+@import "footer";
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* position variables */
+$wrap-height: 425px;
+$wrap-corner: 5px;
+$wrap-margin: 5px;
+$wrap-padding: 5px; 
+
+$item-wrap-height: 200px;
+
+/* appearance variables */
+$body-bg: #B89300;
+$wrap-bg: #79B5AC; /* light blue */
+$title-bg: #AAAAAA;
+$graphic-bg: #333333; /* same as wrap bg */
+$descr-and-links-bg: #84ABAA;
+$links-bg: #6B3162;
+$text-bg: #000000;
+$descr-bg: #C5CEAE;
+$text-white: #FFFFFFF;
+$event-bg: #991766; /* purple */
+$issue-bg: #0DE5A8; /* light green*/
+
+
+/* animations */
+@keyframes spin_image {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+body { 
+  /* position */
+  position: relative; /* TECH NOTE: change to absolute; explain behavior */
+  margin: auto; /* TECH NOTE: what does this do? */
+  
+  /* appearance */ 
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.88889;
+  color: $body-bg;
+  background-color: #F3FFCF; /* mellow yellow */
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+    
+
+
+  .screen_wide_spacer { /* TECH NOTE: Is there a better solution */
+    /* transparent spacer, e.g., btw fixed header and other body elements */
+    position: relative;
+    width: 98%;
+    height: 72px;
+  }
+
+  .item-wrap {
+    /* position */
+    display: block;
+    position: relative;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    width: 20%;
+    height: $item-wrap-height;
+    
+    /* appearance */
+    background: $wrap-bg;; /* beige */
+    font-size: 25px;
+    color: $text-white;
+    border-radius: $wrap-corner;
+
+    .item-title {
+      /* position */
+      display: block;
+      position: relative;
+
+      /* appearance */
+      background-color: #333333;
+      color: #FFFFFF;
+      font-size: 18pt;
+      transition: all 250ms linear;
+      font-family: 'Lucida Grande';
+      text-transform: uppercase;
+      border-radius: $wrap-corner;
+    }
+
+    .item-descr {
+      /* position */
+      display: block;
+      position: relative;
+    
+      /* appearance */
+      font-family: helvetica neue;
+      font-size: 14pt; 
+      color: #000000; /* black */ 
+
+    } 
+
+    .item {
+        /* position */
+        display: block;
+        position: relative;
+
+        /* appearance */
+        color: $text-white;
+        font-size: 18pt;
+        transition: all 250ms linear;
+
+        .item :hover {
+          color: blue;
+        }
+
+        li {
+          /* appearance */
+          font-family: helvetica neue;
+          font-size: 12pt; 
+          color: #FFFFFF; /* white */  
+          transition: color 250ms linear;
+
+          &:hover {
+            color: #000000;
+          }
+        }
+
+        
+      
+    }    
+
+  }
+
+  .banner {
+    /* position */
+    display: block;
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    width: 99%;;
+    height: $wrap-height;
+
+    /* appearance */
+    background: $wrap-bg;
+    border-radius: $wrap-corner;
+
+    .banner-title {
+      /* position */
+      width: 99%;
+      height: 20%;
+      margin: inherit;
+      padding: inherit;
+      
+      /* appearance */
+      background: $title-bg;
+      border-radius: $wrap-corner;
+      font-family: "Arial";
+      font-size: 28px;
+      color: $wrap-bg;
+
+    }
+
+    .graphic {
+      /* position */
+      float: left;
+      width: 20%;
+      height: 75%;
+      margin: $wrap-margin;
+      padding: ($wrap-padding + 5px) $wrap-padding $wrap-padding ($wrap-padding + 15px);
+
+      /* appearance */
+      background: $graphic-bg;
+      border-radius: $wrap-corner;
+
+    }
+
+    .descr-and-links {
+      /* position */
+      display: inline;
+      float: right;
+      width: 76%;
+      height: 75%;
+      margin: $wrap-margin;
+      padding: $wrap-padding;
+
+      /* appearance */
+      color: $text-white;
+      background: $descr-and-links-bg;
+      border-radius: $wrap-corner;
+
+
+      .description {
+        /* position */
+        width: 99%;
+        height: 65%;
+        margin: $wrap-margin $wrap-margin ($wrap-margin + 5px) $wrap-margin;
+        padding: $wrap-padding; 
+
+        /* appearance */
+        background: $descr-bg;
+        border-radius: $wrap-corner;  
+
+        .text-descr {
+          /* position */
+          float: left;
+          width: 76%;
+          height: 95%;
+          margin: $wrap-margin $wrap-margin ($wrap-margin + 5px) $wrap-margin;
+          padding: $wrap-padding + 5px; 
+
+          /* appearance */
+          background: $text-bg;
+          border-radius: $wrap-corner;
+          font-family: "Arial";
+          font-size: 18px;
+          color: $descr-and-links-bg;
+        }
+
+        .graphic-right {
+          /* position */
+          float: right;
+          width: 20%;
+          height: auto;
+          vertical-align: middle;
+          margin: $wrap-margin;
+          padding: ($wrap-padding + 5px) $wrap-padding $wrap-padding ($wrap-padding + 15px);
+
+          background: $graphic-bg;
+          border-radius: $wrap-corner;
+        }
+
+      }
+
+      .links {
+        /* position */
+        width: 20%;
+        height: 28%;
+        margin: ($wrap-margin + 5px) $wrap-margin $wrap-margin $wrap-margin;
+        padding: ($wrap-padding + 5px) $wrap-margin $wrap-margin $wrap-margin;
+
+        /* appearance */
+        background: $links-bg;
+        border-radius: $wrap-corner;
+
+        .button {
+          /* position */
+          height: 200px;
+          width: 25px;
+          margin: 15px;
+          padding: 2px;
+
+          /* appearance */
+          background: inherit;
+          font-family: Helvetica Neue;
+          font-weight: bold;
+          color: $descr-and-links-bg;
+          border: 1px solid $descr-and-links-bg;
+          border-radius: $wrap-corner;
+          transition: all 250ms linear;
+
+          &:hover{
+            background-color: $descr-and-links-bg;
+            color: $links-bg;
+          }
+        }  
+      }
+
+
+/*
+DONE Replace BRIDGE image with possibly another website image
+
+Front page: "Hot button" issues in "items" captions; one box per issue. Think of icon/thumbnail for each issue
+http://www.justicemattersinkansas.org/justice_matters_child_welfare
+PUT THESE (e.g., child welfare) on FRONT PAGE BOXES (see http://icarejax.org as example smaller boxes)
+
+Full face lift is okay!
+
+Team members should have login to some kind of share or repo to easily access material. Now website is connected to Dwolla 
+account for donations. Need to have some way to accept credit card info, easy donation. 
+RESEARCH PAYMENT METHODS, a PayPal of non-profits. 
+
+See DART website as example 
+
+CALENDAR of events needed. BANNER for big events coming up should be highlighted, provided they have a "checkbox" as high pri.
+
+PUBLIC RELATIONS: any Post and Courier, other articles;
+
+HISTORY: grab from existing website ;
+
+
+***********
+
+http://www.justicemattersinkansas.org/justice_matters_history  (Ben)
+
+VIDEOS: Wage theft. Look for on website. Highlights, compilations of actions put together. PLACEHOLDER FOR NOW only. 
+
+STILL SHOTS: Use Charleston area public domain photos;
+
+
+CONGREGATIONS / MEMBERS
+
+*****************
+
+http://icarejax.org/   (Kristin)
+put photos one-click away from front page, but still easily accessible
+
+FACEBOOK AND TWITTER LINKS / CIRCULAR BUTTONS
+
+
+*/
+
+
+    }
+  }
+
+}
+
+
