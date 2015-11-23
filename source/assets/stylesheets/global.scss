@@ -13,7 +13,7 @@
 /* position variables */
 $wrap-height: 425px;
 $wrap-corner: 5px;
-$wrap-margin: 5px;
+$wrap-margin: 10px;
 $wrap-padding: 5px; 
 
 $item-wrap-height: 200px;
@@ -58,12 +58,37 @@ body {
   -webkit-font-smoothing: antialiased;
     
 
-
   .screen_wide_spacer { /* TECH NOTE: Is there a better solution */
     /* transparent spacer, e.g., btw fixed header and other body elements */
     position: relative;
     width: 98%;
     height: 72px;
+  }
+
+  .event-wrap {
+    /* position */
+    display: block;
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+
+    /* appearance */
+    background: $body-bg + #111111;
+  }
+
+  .issue-wrap {
+    /* position */
+    display: block;
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+
+    /* appearance */
+    background: $body-bg - #111111;
   }
 
   .item-wrap {
@@ -73,7 +98,7 @@ body {
     float: left;
     margin: 5px;
     padding: 5px;
-    width: 20%;
+    width: 18%;
     height: $item-wrap-height;
     
     /* appearance */
@@ -86,11 +111,13 @@ body {
       /* position */
       display: block;
       position: relative;
+      margin: 5px;
+      padding: 5px;
 
       /* appearance */
       background-color: #333333;
       color: #FFFFFF;
-      font-size: 18pt;
+      font-size: 14pt;
       transition: all 250ms linear;
       font-family: 'Lucida Grande';
       text-transform: uppercase;
@@ -135,7 +162,6 @@ body {
           }
         }
 
-        
       
     }    
 
@@ -167,7 +193,6 @@ body {
       font-family: "Arial";
       font-size: 28px;
       color: $wrap-bg;
-
     }
 
     .graphic {
@@ -222,7 +247,7 @@ body {
           background: $text-bg;
           border-radius: $wrap-corner;
           font-family: "Arial";
-          font-size: 18px;
+          font-size: 10px;
           color: $descr-and-links-bg;
         }
 
