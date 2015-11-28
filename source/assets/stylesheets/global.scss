@@ -20,16 +20,20 @@ $item-wrap-height: 200px;
 
 /* appearance variables */
 $body-bg: #B89300;
-$wrap-bg: #79B5AC; /* light blue */
+$wrap-bg: #13747D; /* light blue */
+$wrap-highlight: #79B5AC; /* light blue */
+
 $title-bg: #AAAAAA;
 $graphic-bg: #333333; /* same as wrap bg */
 $descr-and-links-bg: #84ABAA;
 $links-bg: #6B3162;
+$links: #77CCA4;
 $text-bg: #000000;
 $descr-bg: #C5CEAE;
-$text-white: #FFFFFFF;
-$event-bg: #991766; /* purple */
-$issue-bg: #0DE5A8; /* light green*/
+$text-white: #FFFFFF;
+$text-black: #000000;
+$event-bg: #474843; /* dark gray */
+$issue-bg: #152B3C; /* dark blue */
 
 
 /* animations */
@@ -56,13 +60,15 @@ body {
   background-color: #F3FFCF; /* mellow yellow */
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-    
+  box-shadow: 2px -2px 10px #111111;  
 
   .screen_wide_spacer { /* TECH NOTE: Is there a better solution */
     /* transparent spacer, e.g., btw fixed header and other body elements */
     position: relative;
     width: 98%;
     height: 72px;
+
+
   }
 
   .event-wrap {
@@ -75,7 +81,8 @@ body {
     height: auto;
 
     /* appearance */
-    background: $body-bg + #111111;
+    background: $event-bg;
+    box-shadow: inherit;
   }
 
   .issue-wrap {
@@ -88,7 +95,8 @@ body {
     height: auto;
 
     /* appearance */
-    background: $body-bg - #111111;
+    background: $issue-bg;
+    box-shadow: inherit;
   }
 
   .item-wrap {
@@ -98,14 +106,15 @@ body {
     float: left;
     margin: 5px;
     padding: 5px;
-    width: 18%;
+    width: 20%;
     height: $item-wrap-height;
     
     /* appearance */
-    background: $wrap-bg;; /* beige */
+    background: $wrap-bg; 
     font-size: 25px;
     color: $text-white;
     border-radius: $wrap-corner;
+    box-shadow: inherit;
 
     .item-title {
       /* position */
@@ -128,10 +137,12 @@ body {
       /* position */
       display: block;
       position: relative;
+      padding: 0px;
+      margin: 0px;
     
       /* appearance */
       font-family: helvetica neue;
-      font-size: 14pt; 
+      font-size: 12pt; 
       color: #000000; /* black */ 
 
     } 
@@ -140,28 +151,87 @@ body {
         /* position */
         display: block;
         position: relative;
+        padding: 0px;
+        margin: 0px;
 
         /* appearance */
         color: $text-white;
-        font-size: 18pt;
-        transition: all 250ms linear;
+        font-size: 4px;
+   
+        ul {
 
-        .item :hover {
-          color: blue;
+        /* position */
+        display: block;
+        position: relative;
+        padding: 0px;
+        margin: 0px;         
+
+          li {
+
+              /* position */
+              position: relative;
+              overflow: hidden;
+              display: inline-block;
+              height: auto;
+              width: 100%;
+              margin: 0px;
+              padding: 0px;
+              text-align: center;
+
+            a { 
+              /* position */
+              position: relative;
+              overflow: hidden;
+              display: inline-block;
+              height: auto;
+              width: 99%;
+              margin: 0px;
+              padding: 0px;
+              text-align: center;
+
+              /* appearance */
+              font-family: helvetica neue;
+              font-size: 12pt; 
+              color: #FFFFFF; /* white */ 
+              background: inherit;
+              color: $descr-and-links-bg;
+              border: 1px solid $descr-and-links-bg;
+              border-radius: $wrap-corner;
+              text-decoration: none;
+
+              span {
+                padding: 0;
+                margin: 0;
+
+                z-index: 5;
+                position: relative;
+                color: black;
+              } 
+
+                  &:after {
+                  position: absolute;
+                  display: block;
+
+                  content: "";
+                  background: $wrap-highlight;
+                  top: 100%;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  transition: all 100ms linear;
+                }
+
+                &:hover:after {
+                  top: 0%;
+                }
+
+                &:hover{
+                  color: black;
+                }         
+            }
+             
         }
-
-        li {
-          /* appearance */
-          font-family: helvetica neue;
-          font-size: 12pt; 
-          color: #FFFFFF; /* white */  
-          transition: color 250ms linear;
-
-          &:hover {
-            color: #000000;
-          }
-        }
-
+      }
       
     }    
 
@@ -276,32 +346,12 @@ body {
         /* appearance */
         background: $links-bg;
         border-radius: $wrap-corner;
-
-        .button {
-          /* position */
-          height: 200px;
-          width: 25px;
-          margin: 15px;
-          padding: 2px;
-
-          /* appearance */
-          background: inherit;
-          font-family: Helvetica Neue;
-          font-weight: bold;
-          color: $descr-and-links-bg;
-          border: 1px solid $descr-and-links-bg;
-          border-radius: $wrap-corner;
-          transition: all 250ms linear;
-
-          &:hover{
-            background-color: $descr-and-links-bg;
-            color: $links-bg;
-          }
-        }  
+         
       }
 
 
 /*
+
 DONE Replace BRIDGE image with possibly another website image
 
 Front page: "Hot button" issues in "items" captions; one box per issue. Think of icon/thumbnail for each issue
