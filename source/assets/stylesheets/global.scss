@@ -15,7 +15,6 @@ $wrap-height: 425px;
 $wrap-corner: 5px;
 $wrap-margin: 10px;
 $wrap-padding: 5px; 
-
 $item-wrap-height: 200px;
 
 /* appearance variables */
@@ -34,18 +33,6 @@ $text-white: #FFFFFF;
 $text-black: #000000;
 $event-bg: #474843; /* dark gray */
 $issue-bg: #152B3C; /* dark blue */
-
-
-/* animations */
-@keyframes spin_image {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 
 body { 
   /* position */
@@ -67,8 +54,6 @@ body {
     position: relative;
     width: 98%;
     height: 72px;
-
-
   }
 
   .event-wrap {
@@ -184,7 +169,7 @@ body {
               overflow: hidden;
               display: inline-block;
               height: auto;
-              width: 99%;
+              width: 100%;
               margin: 0px;
               padding: 0px;
               text-align: center;
@@ -200,18 +185,20 @@ body {
               text-decoration: none;
 
               span {
+                /* position */
                 padding: 0;
                 margin: 0;
-
                 z-index: 5;
                 position: relative;
                 color: black;
               } 
 
-                  &:after {
+                &:after {
+                  /* position */
                   position: absolute;
                   display: block;
 
+                  /* appearance */
                   content: "";
                   background: $wrap-highlight;
                   top: 100%;
@@ -226,7 +213,7 @@ body {
                 }
 
                 &:hover{
-                  color: black;
+                  color: gray;
                 }         
             }
              
@@ -243,12 +230,13 @@ body {
     position: relative;
     margin: 5px;
     padding: 5px;
-    width: 99%;;
-    height: $wrap-height;
+    width: 99%;
+    height: auto;
 
     /* appearance */
     background: $wrap-bg;
     border-radius: $wrap-corner;
+    box-shadow: 2px -2px 10px #111111;
 
     .banner-title {
       /* position */
@@ -269,7 +257,7 @@ body {
       /* position */
       float: left;
       width: 20%;
-      height: 75%;
+      height: auto;
       margin: $wrap-margin;
       padding: ($wrap-padding + 5px) $wrap-padding $wrap-padding ($wrap-padding + 15px);
 
@@ -351,6 +339,8 @@ body {
 
 
 /*
+
+
 
 DONE Replace BRIDGE image with possibly another website image
 
