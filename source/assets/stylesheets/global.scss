@@ -19,10 +19,11 @@ $item-wrap-height: 200px;
 
 /* appearance variables */
 $body-bg: #B89300;
-$wrap-bg: #13747D; /* light blue */
+$light-blue-bg: #13747D; /* light blue */
+$forest-green-bg: #668C4D;
 $wrap-highlight: #79B5AC; /* light blue */
 
-$title-bg: #AAAAAA;
+$title-bg: #000000;
 $graphic-bg: #333333; /* same as wrap bg */
 $descr-and-links-bg: #84ABAA;
 $links-bg: #6B3162;
@@ -31,8 +32,12 @@ $text-bg: #000000;
 $descr-bg: #C5CEAE;
 $text-white: #FFFFFF;
 $text-black: #000000;
+$facebook-blue: #012677;
+$twitter-blue: #45ADA8;
+
 $event-bg: #474843; /* dark gray */
 $issue-bg: #152B3C; /* dark blue */
+$other-bg: #B0A18F; /* beige */
 
 body { 
   /* position */
@@ -44,7 +49,7 @@ body {
   font-size: 100%;
   line-height: 1.88889;
   color: $body-bg;
-  background-color: #F3FFCF; /* mellow yellow */
+  background-color: $other-bg; 
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   box-shadow: 2px -2px 10px #111111;  
@@ -84,6 +89,20 @@ body {
     box-shadow: inherit;
   }
 
+  .other-wrap {
+    /* position */
+    display: block;
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+
+    /* appearance */
+    background: $other-bg;
+    box-shadow: inherit;
+  }
+
   .item-wrap {
     /* position */
     display: block;
@@ -91,138 +110,298 @@ body {
     float: left;
     margin: 5px;
     padding: 5px;
-    width: 20%;
+    width: 15%;
     height: $item-wrap-height;
     
     /* appearance */
-    background: $wrap-bg; 
-    font-size: 25px;
+    background: $light-blue-bg; 
+    font-size: 15px;
     color: $text-white;
     border-radius: $wrap-corner;
     box-shadow: inherit;
+  }
 
-    .item-title {
-      /* position */
-      display: block;
-      position: relative;
-      margin: 5px;
-      padding: 5px;
+  .item-wrap-wide {
+    /* position */
+    display: block;
+    position: relative;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    width: 30%;
+    height: $item-wrap-height;
+    
+    /* appearance */
+    background: $forest-green-bg; 
+    font-size: 15px;
+    color: $text-white;
+    border-radius: $wrap-corner;
+    box-shadow: inherit;
+  }
 
-      /* appearance */
-      background-color: #333333;
-      color: #FFFFFF;
-      font-size: 14pt;
-      transition: all 250ms linear;
-      font-family: 'Lucida Grande';
-      text-transform: uppercase;
-      border-radius: $wrap-corner;
-    }
+  .item-title {
+    /* position */
+    display: block;
+    position: relative;
+    margin: 5px;
+    padding: 5px;
 
-    .item-descr {
+    /* appearance */
+    background-color: #333333;
+    color: #FFFFFF;
+    font-size: 10pt;
+    transition: all 250ms linear;
+    font-family: 'Lucida Grande';
+    text-transform: uppercase;
+    border-radius: $wrap-corner;
+  }
+
+  .item-descr {
+    /* position */
+    display: block;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+  
+    /* appearance */
+    font-family: helvetica neue;
+    font-size: 10pt; 
+    color: #000000; /* black */ 
+
+  } 
+
+
+  .social-media-item {
       /* position */
       display: block;
       position: relative;
       padding: 0px;
       margin: 0px;
-    
+
       /* appearance */
-      font-family: helvetica neue;
-      font-size: 12pt; 
-      color: #000000; /* black */ 
+      color: $text-white;
+      font-size: 4px;
+  
+      ul {
 
-    } 
+      /* position */
+      display: block;
+      position: relative;
+      padding: 0px;
+      margin: 0px;         
 
-    .item {
-        /* position */
-        display: block;
-        position: relative;
-        padding: 0px;
-        margin: 0px;
+        li {
+            /* position */
+            position: relative;
+            overflow: hidden;
+            display: block;
+            height: 40px;
+            width: 120px;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            border-radius: 40px;
 
-        /* appearance */
-        color: $text-white;
-        font-size: 4px;
-   
-        ul {
+          a.facebook { 
+            /* position */
+            position: relative;
+            overflow: hidden;
+            display: block;
+            height: 100%;
+            width: 40px;
+            margin: 0px;
+            padding-left: 10px;
+            padding-top: 2px;
+            text-align: left;
+            font-weight: bold;
 
-        /* position */
-        display: block;
-        position: relative;
-        padding: 0px;
-        margin: 0px;         
+            /* appearance */
+            font-family: helvetica neue;
+            font-size: 16pt; 
+            color: $text-white;
+            background: $facebook-blue;
+            border: 1px solid $descr-and-links-bg;
+            border-radius: 40px;
+            text-decoration: none;
+            transition: all 200ms ease-in-out;
 
-          li {
-
-              /* position */
-              position: relative;
-              overflow: hidden;
-              display: inline-block;
-              height: auto;
+            &:hover {
               width: 100%;
-              margin: 0px;
-              padding: 0px;
-              text-align: center;
+            }
 
-            a { 
+            &:after {
               /* position */
-              position: relative;
-              overflow: hidden;
-              display: inline-block;
-              height: auto;
+              position: absolute;
+              display: block;
+              top: 100%;
+              left: 0;
               width: 100%;
-              margin: 0px;
-              padding: 0px;
-              text-align: center;
+              height: 100%;
 
               /* appearance */
-              font-family: helvetica neue;
-              font-size: 12pt; 
-              color: #FFFFFF; /* white */ 
-              background: inherit;
-              color: $descr-and-links-bg;
-              border: 1px solid $descr-and-links-bg;
-              border-radius: $wrap-corner;
-              text-decoration: none;
-
-              span {
-                /* position */
-                padding: 0;
-                margin: 0;
-                z-index: 5;
-                position: relative;
-                color: black;
-              } 
-
-                &:after {
-                  /* position */
-                  position: absolute;
-                  display: block;
-
-                  /* appearance */
-                  content: "";
-                  background: $wrap-highlight;
-                  top: 100%;
-                  left: 0;
-                  width: 100%;
-                  height: 100%;
-                  transition: all 100ms linear;
-                }
-
-                &:hover:after {
-                  top: 0%;
-                }
-
-                &:hover{
-                  color: gray;
-                }         
+              content: "facebook";
+              padding-left: 10px;
+              text-align: left;
+              padding-top: 5px;
+              font-weight: bold;
+              font-size: 12pt;
+              background: $facebook-blue;
+              transition: all 100ms linear;
             }
-             
-        }
-      }
-      
-    }    
 
-  }
+            &:hover:after {
+              top: 0%;
+            }
+          }
+           
+          a.twitter{ 
+            /* position */
+            position: relative;
+            overflow: hidden;
+            display: block;
+            height: 100%;
+            width: 40px;
+            margin: 0px;
+            padding-left: 10px;
+            padding-top: 2px;
+            text-align: left;
+            font-weight: bold;
+
+            /* appearance */
+            font-family: helvetica neue;
+            font-size: 16pt; 
+            color: $text-white;
+            background: $twitter-blue;
+            border: 1px solid $descr-and-links-bg;
+            border-radius: 40px;
+            text-decoration: none;
+            transition: all 200ms ease-in-out;
+
+            &:hover {
+              width: 100%;
+            }
+
+            &:after {
+              /* position */
+              position: absolute;
+              display: block;
+              top: 100%;
+              left: 0;
+              width: 100%;
+              height: 100%;
+
+              /* appearance */
+              content: "twitter";
+              padding-left: 10px;
+              text-align: left;
+              padding-top: 5px;
+              font-weight: bold;
+              font-size: 12pt;
+              background: $twitter-blue;
+              transition: all 100ms linear;
+            }
+
+            &:hover:after {
+              top: 0%;
+            }
+          }
+
+      }
+    }
+      
+  } 
+
+
+  .item {
+      /* position */
+      display: block;
+      position: relative;
+      padding: 0px;
+      margin: 0px;
+
+      /* appearance */
+      color: $text-white;
+      font-size: 4px;
+ 
+      ul {
+
+      /* position */
+      display: block;
+      position: relative;
+      padding: 0px;
+      margin: 0px;         
+
+        li {
+
+            /* position */
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            height: auto;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+
+          a { 
+            /* position */
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            height: auto;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            text-align: left;
+
+            /* appearance */
+            font-family: helvetica neue;
+            font-size: 10pt; 
+            color: #FFFFFF; /* white */ 
+            background: inherit;
+            color: $descr-and-links-bg;
+            border: 1px solid $descr-and-links-bg;
+            border-radius: $wrap-corner;
+            text-decoration: none;
+
+            span {
+              /* position */
+              float: left;
+              padding: 0;
+              margin: 0;
+              z-index: 5;
+              position: relative;
+              color: black;
+            } 
+
+              &:after {
+                /* position */
+                position: absolute;
+                display: block;
+
+                /* appearance */
+                content: "";
+                background: $wrap-highlight;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: all 100ms linear;
+              }
+
+              &:hover:after {
+                top: 0%;
+              }
+
+              &:hover{
+                color: gray;
+              }         
+          }         
+      }
+    }
+      
+  }    
+
 
   .banner {
     /* position */
@@ -234,9 +413,8 @@ body {
     height: auto;
 
     /* appearance */
-    background: $wrap-bg;
+    background: transparent;
     border-radius: $wrap-corner;
-    box-shadow: 2px -2px 10px #111111;
 
     .banner-title {
       /* position */
@@ -246,11 +424,12 @@ body {
       padding: inherit;
       
       /* appearance */
-      background: $title-bg;
+      background: transparent;
       border-radius: $wrap-corner;
       font-family: "Arial";
       font-size: 28px;
-      color: $wrap-bg;
+      color: $text-white;
+      box-shadow: 2px -2px 10px #111111;
     }
 
     .graphic {
@@ -264,7 +443,6 @@ body {
       /* appearance */
       background: $graphic-bg;
       border-radius: $wrap-corner;
-
     }
 
     .descr-and-links {
@@ -333,14 +511,11 @@ body {
 
         /* appearance */
         background: $links-bg;
-        border-radius: $wrap-corner;
-         
+        border-radius: $wrap-corner;  
       }
 
 
 /*
-
-
 
 DONE Replace BRIDGE image with possibly another website image
 
@@ -358,8 +533,10 @@ See DART website as example
 
 CALENDAR of events needed. BANNER for big events coming up should be highlighted, provided they have a "checkbox" as high pri.
 
+X
 PUBLIC RELATIONS: any Post and Courier, other articles;
 
+X
 HISTORY: grab from existing website ;
 
 
@@ -379,6 +556,7 @@ CONGREGATIONS / MEMBERS
 http://icarejax.org/   (Kristin)
 put photos one-click away from front page, but still easily accessible
 
+X
 FACEBOOK AND TWITTER LINKS / CIRCULAR BUTTONS
 
 
