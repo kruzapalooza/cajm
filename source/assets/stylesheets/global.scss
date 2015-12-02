@@ -71,7 +71,7 @@ body {
     height: auto;
 
     /* appearance */
-    background: $event-bg;
+    background: transparent;
     box-shadow: inherit;
   }
 
@@ -85,7 +85,7 @@ body {
     height: auto;
 
     /* appearance */
-    background: $issue-bg;
+    background: transparent;
     box-shadow: inherit;
   }
 
@@ -99,7 +99,7 @@ body {
     height: auto;
 
     /* appearance */
-    background: $other-bg;
+    background: transparent;
     box-shadow: inherit;
   }
 
@@ -424,7 +424,7 @@ body {
       padding: inherit;
       
       /* appearance */
-      background: transparent;
+      background: #280904;
       border-radius: $wrap-corner;
       font-family: "Arial";
       font-size: 28px;
