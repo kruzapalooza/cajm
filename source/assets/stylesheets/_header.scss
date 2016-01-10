@@ -22,80 +22,122 @@ header {
     font-variant: normal;
   }
 
-  .logo {
-    float: right;
-    background-color: black;
+  @media (min-width: 780px) {
+    nav {
+      float: left;
+      background-color: black;
+
+      #main-nav > li {
+        float: left;
+        position: relative; 
+        width: 120px;
+        height: 60px;
+        text-align: center;
+        vertical-align: bottom;
+      }
+    
+      li:before {
+        position: absolute;
+        left: 0px;
+        background-color: #4A4031;   
+        content: "";
+        width: 1px;
+        height: 100%;
+      } 
+
+      ul {
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        list-style-type: none; 
+      
+        li {
+          background-color: #000000;
+          -webkit-transition: background-color 0.3s ease-in-out;
+          -moz-transition: background-color 0.3s ease-in-out;
+          -ms-transition: background-color 0.3s ease-in-out;
+          -o-transition: background-color 0.3s ease-in-out;       
+          transition: background-color 0.3s ease-in-out;       
+        }
+
+        li:hover {
+          color: #FFFFFF; /* white */
+          background-color: #000000;
+        }
+
+        .dropdown {
+          /* display: none; */
+          position: absolute;
+          margin-top: -9999px; 
+          top: 60px;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transition: opacity 1s ease-in-out; 
+        }
+
+        .dropdown li:hover {
+          background-color: #000047;
+        }
+
+        li a {
+          display: block;
+          padding: 8px 8px 8px 8px;
+
+        }
+      }
+
+      li.has-dropdown:hover > ul.dropdown {
+        margin-top: 0;  /* required for drop-down to initiate */ 
+        opacity: 1;     /* make menu visible on mouse hover   */
+      }
+
+    } /* end nav */
+
   }
 
-  nav {
-    float: left;
-    background-color: black;
-  
-
-    #main-nav > li {
-      float: left;
-      position: relative; 
-      width: 150px;
-      height: 60px;
-      text-align: center;
-      vertical-align: bottom;
+  @media (max-width: 780px) {
+    nav {
+      display: none;
     }
-  
-    li:before {
-      position: absolute;
-      left: 0px;
-      background-color: #4A4031;   
-      content: "";
-      width: 1px;
-      height: 100%;
-    } 
+  }
 
-    ul {
-      height: 60px;
-      margin: 0;
-      padding: 0;
-      list-style-type: none; 
-    
-      li {
-        -webkit-transition: background-color 0.3s ease-in-out;
-        -moz-transition: background-color 0.3s ease-in-out;
-        -ms-transition: background-color 0.3s ease-in-out;
-        -o-transition: background-color 0.3s ease-in-out;       
-        transition: background-color 0.3s ease-in-out;       
-      }
+  .social-media {
+    float: right;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
 
-      li:hover {
-        color: #FFFFFF; /* white */
-        outline-style: dotted;
-        outline-color: pink;
-      }
+  .social-media a {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 12pt;
+    transition: all 200ms ease-in-out;
 
-      .dropdown {
-        /* display: none; */
-        position: absolute;
-        margin-top: -9999px; 
-        top: 60px;
-        left: 0;
-        width: 100%;
-        opacity: 0; /* so menus aren't visible at first */
-        transition: opacity 0.4s ease-in-out; 
-      }
-
-      .dropdown li:hover {
-        background-color: #000047;
-      }
-
-      li a {
-        display: block;
-        padding: 8px 8px 8px 8px;
-      }
+    &:hover {
+      transform: rotate(360deg);
+      color: white;
+      font-weight: bold;
     }
 
-    li.has-dropdown:hover > ul.dropdown {
-      margin-top: 0;  /* required for drop-down to initiate */ 
-      opacity: 1;     /* make menu visible on mouse hover   */
-    }
+  }
 
+  .social-media.facebook {
+    background: #3B5998;
+  }
+
+  .social-media.twitter {
+    background: #0084b4;
+  }
+
+  .social-media.google-plus {
+    background: #d34836;
   }
 
 }
