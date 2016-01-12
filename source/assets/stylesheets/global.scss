@@ -449,6 +449,14 @@ body {
     background: transparent;
     border-radius: $wrap-corner;
 
+    /* avoid the great collapse */
+    &:after { 
+       content: ""; 
+       display: block; 
+       height: 0; 
+       clear: both;
+    }
+
     .banner-title {
       /* position */
       width: 99%;
@@ -492,6 +500,27 @@ body {
       background: $top-wrap-bg;
       border-radius: $wrap-corner;
 
+      table {
+          width:100%;
+      }
+      table, th, td {
+          border: 1px solid #048091;
+          border-collapse: collapse;
+      }
+      th, td {
+          padding: 5px;
+          text-align: left;
+      }
+      table tr:nth-child(even) {
+          background-color: $row-color1;
+      }
+      table tr:nth-child(odd) {
+         background-color: $row-color2;
+      }
+      table th {
+          background-color: black;
+          color: white;
+      }
 
       .description {
         /* position */
@@ -548,6 +577,14 @@ body {
       }
 
 
+
+    }
+  }
+
+}
+
+
+
 /*
 
 DONE Replace BRIDGE image with possibly another website image
@@ -594,11 +631,3 @@ FACEBOOK AND TWITTER LINKS / CIRCULAR BUTTONS
 
 
 */
-
-
-    }
-  }
-
-}
-
-
