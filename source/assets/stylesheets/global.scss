@@ -64,7 +64,7 @@ body {
     height: 72px;
   }
 
-  .event-wrap {
+  .thumbnail-wrap {
     /* position */
     display: block;
     position: relative;
@@ -76,37 +76,17 @@ body {
     /* appearance */
     background: transparent;
     box-shadow: inherit;
+
+    /* avoid the great collapse */
+    &:after { 
+       content: ""; 
+       display: block; 
+       height: 0; 
+       clear: both;
+    }
   }
 
-  .issue-wrap {
-    /* position */
-    display: block;
-    position: relative;
-    margin: 5px;
-    padding: 5px;
-    width: 100%;
-    height: auto;
-
-    /* appearance */
-    background: transparent;
-    box-shadow: inherit;
-  }
-
-  .other-wrap {
-    /* position */
-    display: block;
-    position: relative;
-    margin: 5px;
-    padding: 5px;
-    width: 100%;
-    height: auto;
-
-    /* appearance */
-    background: transparent;
-    box-shadow: inherit;
-  }
-
-  .item-wrap {
+  .thumbnail {
     /* position */
     display: block;
     position: relative;
@@ -115,15 +95,17 @@ body {
     padding: 5px;
     width: 15%;
     height: $item-wrap-height;
+    overflow-y: auto;
     
     /* appearance */
     background: $light-blue-bg; 
     font-size: 15px;
-    color: $text-white;
+    color: #000000;
     border-radius: $wrap-corner;
     box-shadow: inherit;
   }
 
+  /* DELETE */
   .item-wrap-wide {
     /* position */
     display: block;
@@ -142,7 +124,7 @@ body {
     box-shadow: inherit;
   }
 
-  .item-title {
+  .thumbnail-title {
     /* position */
     display: block;
     position: relative;
@@ -159,20 +141,19 @@ body {
     border-radius: $wrap-corner;
   }
 
-  .item-descr {
+  .thumbnail-descr {
     /* position */
     display: block;
     position: relative;
     padding: 0px;
     margin: 0px;
+
   
     /* appearance */
     font-family: helvetica neue;
     font-size: 10pt; 
-    color: #000000; /* black */ 
 
   } 
-
 
   .social-media-item {
       /* position */
@@ -315,7 +296,7 @@ body {
   } 
 
 
-  .item {
+  .button-link {
       /* position */
       display: block;
       position: relative;

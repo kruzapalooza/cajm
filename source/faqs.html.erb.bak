@@ -6,9 +6,7 @@
     <title> FAQs </title> 
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="/assets/stylesheets/global.css" />
-    
-    <!-- Fonts -->
+    <link rel="stylesheet" href="/assets/stylesheets/faqs.css" />
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' 
         rel='stylesheet' type='text/css'>
 
@@ -657,7 +655,7 @@
 
     </div>
 
-    <div class="thumbnail-wrap">
+    <div class="event-wrap">
 
         <div class="banner">
             <span class="banner-title"> 
@@ -665,32 +663,32 @@
             </span>
         </div>
 
-        <div class="thumbnail"> 
-            <div class="thumbnail-title"> 
+        <div class="item-wrap"> 
+            <div class="item-title"> 
                 Q: What are CAJM's general goals? 
             </div>    
-            <div class="thumbnail-descr"> 
+            <div class="item-descr"> 
                 A: The general goals of the Charleston Area Justice Ministry (CAJM) include:
             </div>
 
         </div>
 
-        <div class="thumbnail"> 
-            <div class="thumbnail-title"> 
+        <div class="item-wrap"> 
+            <div class="item-title"> 
                 Rally
             </div> 
-            <div class="thumbnail-descr"> 
+            <div class="item-descr"> 
                 Time: Mon Mar 14th 7:00pm
                 Location: TBD 
             <a href="http://www.charlestonareajusticeministry.org/index.php/faq/178-what-is-the-cajm-rally"> CAJM Rally</a>
             </div>
         </div>
 
-        <div class="thumbnail"> 
-            <div class="thumbnail-title">
+        <div class="item-wrap"> 
+            <div class="item-title">
                 Nehemiah Action Assembly
             </div>
-            <div class="thumbnail-descr"> 
+            <div class="item-descr"> 
                 Bring at least three people with you!
                 Location: TBD 
                 Time: Mon 4/18/2016 7pm
@@ -699,11 +697,11 @@
             </a>
         </div>
 
-        <div class="thumbnail"> 
-            <div class="thumbnail-title">
+        <div class="item-wrap"> 
+            <div class="item-title">
                 Celebration and Investment Drive Kick-Off
             </div>
-            <div class="thumbnail-descr"> 
+            <div class="item-descr"> 
                 Location: TBD 
                 Time: Mon 5/23/2016 7pm
             </div>
@@ -718,7 +716,7 @@
 
 
 
-    <div class="thumbnail-wrap">
+    <div class="issue-wrap">
 
         <div class="banner">
             <span class="banner-title"> 
@@ -726,11 +724,11 @@
             </span>
         </div>
 
-        <div class="thumbnail"> 
-            <div class="thumbnail-title"> 
+        <div class="item-wrap"> 
+            <div class="item-title"> 
                 Wage Theft
             </div>
-            <div class="button-link">
+            <div class="item">
                 <ul>
                     <li>        
                         <a href="http://www.postandcourier.com/article/20150424/PC1204/150429573"> 
@@ -740,11 +738,11 @@
                 </ul> 
             </div>   
         </div>    
-        <div class="thumbnail"> 
-            <div class="thumbnail-title"> 
+        <div class="item-wrap"> 
+            <div class="item-title"> 
                 Homelessness
             </div>
-            <div class="button-link">
+            <div class="item">
                 <ul>
                     <li>        
                         <a href="http://icarejax.org/homelessness/"> 
@@ -754,11 +752,11 @@
                 </ul> 
             </div>   
         </div>      
-        <div class="thumbnail">
-            <div class="thumbnail-title"> 
+        <div class="item-wrap">
+            <div class="item-title"> 
                 Children's Concerns
             </div> 
-            <div class="button-link">
+            <div class="item">
                 <ul>
                     <li>  
                         <a href="http://www.justicemattersinkansas.org/justice_matters_child_welfare"> 
@@ -776,7 +774,7 @@
     </div>
 
 
-    <div class="thumbnail-wrap">
+    <div class="other-wrap">
 
         <div class="banner">
             <span class="banner-title"> 
@@ -784,11 +782,11 @@
             </span>
         </div>
 
-        <div class="thumbnail"> 
-            <div class="thumbnail-title"> 
+        <div class="item-wrap"> 
+            <div class="item-title"> 
                 CAJM in the News
             </div>
-            <div class="button-link">
+            <div class="item">
                 <ul>
                     <li>        
                         <a href="http://www.postandcourier.com/article/20150424/PC1204/150429573"> 
@@ -809,11 +807,11 @@
             </div>   
         </div>     
 
-        <div class="thumbnail"> 
-            <div class="thumbnail-title"> 
+        <div class="item-wrap"> 
+            <div class="item-title"> 
                 Videos
             </div>
-            <div class="button-link">
+            <div class="item">
                 <ul>
                     <li>        
                         <a href="http://www.postandcourier.com/article/20150424/PC1204/150429573"> 
@@ -824,17 +822,17 @@
             </div>   
         </div>  
 
-        <div class="thumbnail"> 
-            <div class="thumbnail-title"> 
+        <div class="item-wrap-wide"> 
+            <div class="item-title"> 
                 CAJM History
             </div>
-            <div class="thumbnail-descr">
+            <div class="item-descr">
                 CAJM began in 2011 when a group of clergy gathered together to form a Sponsoring Committee with the Director of DART to begin the process of establishing a justice organization in the Charleston area. In October of 2012, member congregations came together and voted to address the following issues: Schools/Education and Crime/Violence. CAJM's research committees worked tirelessly to identify the specific issues for CAJM to address. 
             </div>   
         </div> 
 
-        <div class="thumbnail"> 
-            <div class="thumbnail-title"> 
+        <div class="item-wrap"> 
+            <div class="item-title"> 
                 Social Media
             </div>
             <div class="social-media-item">
