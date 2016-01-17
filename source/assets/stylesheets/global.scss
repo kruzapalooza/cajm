@@ -15,7 +15,8 @@ $wrap-height: 425px;
 $wrap-corner: 5px;
 $wrap-margin: 10px;
 $wrap-padding: 5px; 
-$item-wrap-height: 200px;
+$thumbnail-height: 200px;
+$thumbnail-width: 200px;
 
 /* appearance variables */
 $body-bg: #B89300;
@@ -66,6 +67,7 @@ body {
 
   .thumbnail-wrap {
     /* position */
+    float: left;
     display: block;
     position: relative;
     margin: 5px;
@@ -91,35 +93,16 @@ body {
     display: block;
     position: relative;
     float: left;
-    margin: 5px;
+    margin: 8px;
     padding: 5px;
-    width: 15%;
-    height: $item-wrap-height;
+    width: $thumbnail-width;
+    height: $thumbnail-height;
     overflow-y: auto;
     
     /* appearance */
     background: $light-blue-bg; 
     font-size: 15px;
     color: #000000;
-    border-radius: $wrap-corner;
-    box-shadow: inherit;
-  }
-
-  /* DELETE */
-  .item-wrap-wide {
-    /* position */
-    display: block;
-    position: relative;
-    float: left;
-    margin: 5px;
-    padding: 5px;
-    width: 30%;
-    height: $item-wrap-height;
-    
-    /* appearance */
-    background: $forest-green-bg; 
-    font-size: 15px;
-    color: $text-white;
     border-radius: $wrap-corner;
     box-shadow: inherit;
   }
@@ -386,6 +369,7 @@ body {
       
   }    
 
+  /* REPLACE with plain old table. Use js to read faqs.json into faqs.html */
   .striped-table {
     display: block;
     position: relative;
