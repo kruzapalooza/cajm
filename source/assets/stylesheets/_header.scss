@@ -1,9 +1,11 @@
+$header-height: 72px;
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 64px;
+  height: $header-height - 8px;
   z-index: 1000000;
 
   background-color: #000000;
@@ -65,8 +67,9 @@ header {
           background-color: #000000;
         }
 
+        /* TEMPORARY FIX: improve with link below */
+        /* http://www.kriesi.at/archives/create-a-multilevel-dropdown-menu-with-css-and-improve-it-via-jquery */
         .dropdown {
-          /* display: none; */
           position: absolute;
           margin-top: -9999px; 
           top: 60px;
@@ -74,6 +77,10 @@ header {
           width: 100%;
           height: 100%;
           transition: opacity 1s ease-in-out; 
+
+          .second-level {
+            left: 100%;
+          }
         }
 
         .dropdown li:hover {

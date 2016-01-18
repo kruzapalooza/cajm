@@ -1,16 +1,58 @@
-// require('js-yaml');
 
 
 jQuery(document).ready( function($) {
 
-	// OPEN YAML FILE 
+	/* 
+	None of the below require statements work. Keep getting this error:
 
-	// PARSE YAML FILE
+	Uncaught Error: Module name "../../../node_modules/js-yaml/lib/js-yaml" 
+	has not been loaded yet for context: _. Use require([])
+
+	Goal is simply to open yaml file (*readonly server side*) in javascript.
+	Have tried these:
+
+	https://github.com/tj/js-yaml/blob/master/Readme.md
+	https://github.com/nodeca/js-yaml
+	https://github.com/nodeca/js-yaml/blob/master/examples/sample_document.js
+	https://github.com/nodeca/js-yaml/blob/master/examples/dumper.js
+	http://stackoverflow.com/questions/23603514/javascript-require-function-giving-referenceerror-require-is-not-defined
+	https://github.com/nodeca/js-yaml/issues/38
+	*/
 
 	/*
-	yaml = require('js-yaml');
-	fs   = require('fs');
-	f = open ('r', "/assets/data/faqs.yaml");
+	yaml = require("../../../node_modules/js-yaml/lib/js-yaml");
+	fs   = require("fs");
+	yaml = require("../../../node_modules/js-yaml/bin/js-yaml.js");
+	fs   = require("js-yaml");
+	*/
+
+	var yamlpath = "/data/faqs.yaml";
+
+	// Get document, or throw exception on error
+	try {
+	  var doc = yaml.safeLoad(fs.readFileSync(yamlpath, 'utf8'));
+	  console.log(doc);
+	} catch (e) {
+	  console.log(e);
+	}
+
+	/*
+	var yamlpath = "/data/faqs.yaml";
+	var yamldata = [];
+
+	// OPEN YAML FILE 
+	
+	var file = new File(yamldata, yamlpath, {type:"text/yaml"});
+	console.log(yamldata);
+	
+
+	var fs = require('fs');
+	var array = fs.readFileSync(yamlpath).toString().split("\n");
+	for(i in array) {
+	    console.log(array[i]);
+	}
+
+	// PARSE YAML FILE
 	*/
 
 	/* EDIT THESE TO ADD VALUES FOR ADDITIONAL YEARS. 
@@ -48,7 +90,4 @@ jQuery(document).ready( function($) {
 		$(this).html( content ); 
 	});
 
-
 });
-
-

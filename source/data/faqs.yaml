@@ -4,9 +4,10 @@ faqs:
             question: "What are CAJM's general goals?"      
             answer: "The general goals of the Charleston Area Justice Ministry (CAJM) include:"         
             answer_ol: 
-                li: "To build strong relationships among religious congregations."          
-                li: "To develop a culture of accountability within CAJM and to hold public institutions accountable to address local community issues of concern to member congregations through a process of education research, action, and reflection."
-                li: "To strengthen member congregations by training existing leaders in organizing skills, identifying new leaders, and building justice ministry networks."
+                -
+                    li: "To build strong relationships among religious congregations."          
+                    li: "To develop a culture of accountability within CAJM and to hold public institutions accountable to address local community issues of concern to member congregations through a process of education research, action, and reflection."
+                    li: "To strengthen member congregations by training existing leaders in organizing skills, identifying new leaders, and building justice ministry networks."
     -             
         q_a: 
             question: "What Happened at the CAJM Team Assembly on October 26, 2015?"
