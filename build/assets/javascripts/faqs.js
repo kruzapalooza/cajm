@@ -1,9 +1,6 @@
 
+
 jQuery(document).ready( function($) {
-
-	yaml = require("/assets/javascripts/js-yaml.js");
-	fs   = require("fs");
-
 
 	/* 
 	None of the below require statements work. Keep getting this error:
@@ -72,6 +69,16 @@ jQuery(document).ready( function($) {
 	var grants 			 = [31, 44,   73,    81] ;
 
 	/* getid id nehemiah_turnout and add divs with these values:) */
+
+	$('#years').each( function (){
+	  	var content = '<div class=\"row\">';
+	  	years.forEach( function(i){
+	  		content += '<div class=\"cell\">' + i +'</div>' ;
+	  		console.log(i);	
+		});
+	  	content += "</div>"
+		$(this).html( content ); 
+	});
 
 	$('#nehemiah-turnout').each( function (){
 	  	var content = '<div class=\"row\">';
