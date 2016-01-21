@@ -1,9 +1,25 @@
 
 jQuery(document).ready( function($) {
 
-	yaml = require("/assets/javascripts/js-yaml.js");
-	fs   = require("fs");
+	//yaml = require("/assets/javascripts/js-yaml.js");
+	//fs   = require("/fs");
 
+define (["/assets/javascripts/js-yaml.js"], function(){
+
+	var yamlpath = "/data/faqs.yaml";
+
+	// Get document, or throw exception on error
+	try {
+	  var doc = yaml.safeLoad(fs.readFileSync(yamlpath, 'utf8'));
+	  console.log(doc);
+	} catch (e) {
+	  console.log(e);
+	}
+} );
+
+   /*
+	
+   */
 
 	/* 
 	None of the below require statements work. Keep getting this error:
