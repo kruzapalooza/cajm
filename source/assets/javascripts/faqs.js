@@ -1,3 +1,23 @@
+YAML = require('yamljs');
+ 
+// parse YAML string 
+nativeObject = YAML.parse(yamlString);
+ 
+// Generate YAML 
+yamlString = YAML.stringify(nativeObject, 4);
+ 
+// Load yaml file using YAML.load 
+nativeObject = YAML.load('/data/faqs.yml');
+
+requirejs.config({
+    //Pass the top-level main.js/index.js require
+    //function to requirejs so that node modules
+    //are loaded relative to the top-level JS file.
+    nodeRequire: require
+});
+
+var YAML = require('requirejs');
+
 
 jQuery(document).ready( function($) {
 

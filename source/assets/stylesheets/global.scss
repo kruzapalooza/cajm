@@ -24,6 +24,7 @@ $body-bg: #B89300;
 $light-blue-bg: #13747D; /* light blue */
 $forest-green-bg: #668C4D;
 $wrap-highlight: #83555E; /* reddish */
+$button-border: #EDE574;
 
 $title-bg: #000000;
 $graphic-bg: #333333; /* same as wrap bg */
@@ -334,7 +335,7 @@ body {
             color: #FFFFFF; /* white */ 
             background: inherit;
             color: $top-wrap-bg;
-            border: 1px solid $top-wrap-bg;
+            border: 1px solid $button-border;
             border-radius: $wrap-corner;
             text-decoration: none;
 
@@ -387,7 +388,7 @@ body {
 
     /* appearance */
     background: transparent;
-
+    /* box-shadow: 2px -2px 10px #111111; */
     border-radius: $wrap-corner;
 
     /* avoid the great collapse */
@@ -411,7 +412,6 @@ body {
       font-family: "Arial";
       font-size: 28px;
       color: $text-white;
-      box-shadow: 2px -2px 10px #111111;
     }
 
     .graphic {
@@ -440,8 +440,7 @@ body {
       color: $text-white;
       background: $top-wrap-bg;
       border-radius: $wrap-corner;
-      box-shadow: inherit;
-
+      box-shadow: 2px -2px 10px #111111;
 
       h2 {
         font-family: Georgia; 
