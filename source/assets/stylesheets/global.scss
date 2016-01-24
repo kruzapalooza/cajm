@@ -465,6 +465,10 @@ body {
       ol {
         margin-left: 35px;
         color: $text-gray;
+        li:before {
+            content: ""; /* Insert content that looks like bullets */
+            padding-right: 8px;
+          }
       }
 
       p {
