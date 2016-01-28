@@ -1,5 +1,72 @@
-YAML = require('yamljs');
+var requirejs = require('requirejs');
+
+var requirejs = require('../node_modules/requirejs/bin/r.js');
+
+//YAML = require('../node_modules/yamljs'); 
+
+requirejs.config({
+
+  //Pass the top-level main.js/index.js require
+  //function to requirejs so that node modules
+  //are loaded relative to the top-level JS file.
+  nodeRequire: require,
+
+  baseUrl: "../node_modules/",
+  paths: {
+      "some": "some/v1.0"
+  },
+  waitSeconds: 15
+});
+
+/*
+define require(["../node_modules/yamljs/lib/Yaml.js", 
+	"../node_modules/js-yaml/bin/js-yaml.js"], function(foo) {
+    //This function is called when scripts/helper/util.js is loaded.
+    //If util.js calls define(), then this function is not fired until
+    //util's dependencies have loaded, and the util argument will hold
+    //the module value for "helper/util".
+});
+*/
+
+var YAMLJS = require('yamljs');
+var YAML   = require('yaml');
+
+requirejs(['require', 'name'], function (require, name) {
+    var namedModule = require('name');
+});
+
+requirejs(["../node_modules/yamljs"], function(foo) {
+
+  var nativeObject = YAML.load('/data/faqs.yaml');
+  
+  var yamlpath = "/data/faqs.yaml";
+  // Get document, or throw exception on error
+  try {
+    var doc = yaml.safeLoad(fs.readFileSync(yamlpath, 'utf8'));
+    console.log(doc);
+  } catch (e) {
+    console.log("There's an error");
+  }
  
+});
+
+
+/* 
+define require(["require", "../node_modules/yamljs", "yamljs"], function(bar) {
+    var namedModule = require('yaml');
+      //This function will be called when all the dependencies
+      //listed above are loaded. Note that this function could
+      //be called before the page is loaded.
+      //This callback is optional.
+
+      var nativeObject = YAML.load('/data/faqs.yaml');
+});
+
+ */
+
+
+
+/*
 // parse YAML string 
 nativeObject = YAML.parse(yamlString);
  
@@ -16,98 +83,8 @@ requirejs.config({
     nodeRequire: require
 });
 
-var YAML = require('requirejs');
 
-
-jQuery(document).ready( function($) {
-
-	//yaml = require("/assets/javascripts/js-yaml.js");
-	//fs   = require("/fs");
-
-define (["/assets/javascripts/js-yaml.js"], function(){
-
-	var yamlpath = "/data/faqs.yaml";
-
-	// Get document, or throw exception on error
-	try {
-	  var doc = yaml.safeLoad(fs.readFileSync(yamlpath, 'utf8'));
-	  console.log(doc);
-	} catch (e) {
-	  console.log(e);
-	}
-} );
-
-   /*
-	
-   */
-
-	/* 
-	None of the below require statements work. Keep getting this error:
-
-	Uncaught Error: Module name "../../../node_modules/js-yaml/lib/js-yaml" 
-	has not been loaded yet for context: _. Use require([])
-
-	Goal is simply to open yaml file (*readonly server side*) in javascript.
-	Have tried these:
-
-	https://github.com/tj/js-yaml/blob/master/Readme.md
-	https://github.com/nodeca/js-yaml
-	https://github.com/nodeca/js-yaml/blob/master/examples/sample_document.js
-	https://github.com/nodeca/js-yaml/blob/master/examples/dumper.js
-	http://stackoverflow.com/questions/23603514/javascript-require-function-giving-referenceerror-require-is-not-defined
-	https://github.com/nodeca/js-yaml/issues/38
-	*/
-
-	/*
-	yaml = require("../../../node_modules/js-yaml/lib/js-yaml");
-	fs   = require("fs");
-	yaml = require("../../../node_modules/js-yaml/bin/js-yaml.js");
-	fs   = require("js-yaml");
-	*/
-
-	var yamlpath = "/data/faqs.yaml";
-
-	// Get document, or throw exception on error
-	try {
-	  var doc = yaml.safeLoad(fs.readFileSync(yamlpath, 'utf8'));
-	  console.log(doc);
-	} catch (e) {
-	  console.log(e);
-	}
-
-	/*
-	var yamlpath = "/data/faqs.yaml";
-	var yamldata = [];
-
-	// OPEN YAML FILE 
-	
-	var file = new File(yamldata, yamlpath, {type:"text/yaml"});
-	console.log(yamldata);
-	
-
-	var fs = require('fs');
-	var array = fs.readFileSync(yamlpath).toString().split("\n");
-	for(i in array) {
-	    console.log(array[i]);
-	}
-
-	// PARSE YAML FILE
-	*/
-
-	/* EDIT THESE TO ADD VALUES FOR ADDITIONAL YEARS. 
-	FIRST COLUMN IS 2012. */
-	var years 			 = [2012, 2013, 2014, 2015];
-	var nehemiah_turnout = [0,  1500, 2250, 3000] ;
-	var congregations    = [25, 33,   41,   50 ] ;
-	var member_needed    = [0,  375,  563,  750] ;
-	var staff            = [1,  1.5,  3,      4] ;
-	var budget           = [66, 144,  213,  261] ;
-	var dues   			 = [30, 50,   60,    65] ;
-	var member_drive     = [5,  30,   50,    75] ;
-	var corporate        = [0,  20,   30,    40] ;
-	var grants 			 = [31, 44,   73,    81] ;
-
-	/* getid id nehemiah_turnout and add divs with these values:) */
+	// getid id nehemiah_turnout and add divs with these values:) 
 
 	$('#nehemiah-turnout').each( function (){
 	  	var content = '<div class=\"row\">';
@@ -120,3 +97,4 @@ define (["/assets/javascripts/js-yaml.js"], function(){
 	});
 
 });
+*/
