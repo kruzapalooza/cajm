@@ -2,7 +2,7 @@
 faqs:
     -   q_a: 
             question: "What are CAJM's general goals?"      
-            answer: "The general goals of the Charleston Area Justice Ministry (CAJM) include:"         
+            answer: "The general goals of the Charleston Area Justice Ministry (CAJM) include:"        
             answer_ol: 
                 - li: "To build strong relationships among religious congregations."
                 - li: "To develop a culture of accountability within CAJM and to hold public institutions accountable to address local community issues of concern to member congregations through a process of education research, action, and reflection."
@@ -32,7 +32,9 @@ faqs:
                 - li: "Charity Missionary Baptist*"
                 - li: "Church of the Holy Communion*"
                 - li: "Circular Congregational*"
-
-
-
-
+    -   q_a:
+            question: "test question"
+            answer: "test answer"
+    -   q_a:
+            question: "test question"
+            answer: "test answer"
