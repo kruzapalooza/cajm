@@ -14,7 +14,7 @@ jQuery(document).ready( function($){
         if (level_two === 'q_a') {
 
           $thumbnail_content += "<div class=\"thumbnail\">" ;
-          // $top_wrap_content  += "<h2>" ;
+          $top_wrap_content  += "<div class=\"top-wrap\">";
 
           for (var level_three in level_zero.faqs[level_one][level_two]) {
             console.log('l3 key: ' + level_three);
@@ -27,7 +27,19 @@ jQuery(document).ready( function($){
               $thumbnail_content += level_zero.faqs[level_one][level_two][level_three];
               $thumbnail_content += "</div>";
 
-              // $top_wrap_content  += level_zero.faqs[level_one][level_two][level_three];
+              // $top_wrap_content  += anchor 
+              $top_wrap_content  += "<h2>";
+              $top_wrap_content  += level_zero.faqs[level_one][level_two][level_three];
+              $top_wrap_content  += "</h2>";
+              /*
+              <a class="anchor" id="cajm-goals-growth"></a>
+              <h2>
+                  Q: What are CAJM's goals for growth and expansion? 
+              </h2> 
+              <h2>
+                  A: The general goals of CAJM include:
+              </h2>  
+              */
             }
 
             if (level_three === 'answer') {
@@ -56,8 +68,8 @@ jQuery(document).ready( function($){
             } 
           } 
 
-          $thumbnail_content += "</div>" ;
-          // $top_wrap_content  += "</h2>" ;
+          $thumbnail_content += "</div>" ; // end tag to <thumbnail>
+          $top_wrap_content  += "</div>" ; // end tag to <top-wrap>
 
         }
 
@@ -65,8 +77,8 @@ jQuery(document).ready( function($){
           $("#thumbnail-wrap-faqs").append($thumbnail_content);
         }); 
 
-        $('#top-wrap-faqs').each( function (){
-          $("#top-wrap-faqs").append($top_wrap_content);
+        $('#banner-faqs').each( function (){
+          $("#banner-faqs").append($top_wrap_content);
         });
 
       }
