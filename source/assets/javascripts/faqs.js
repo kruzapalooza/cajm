@@ -5,6 +5,8 @@ jQuery(document).ready( function($){
   $.ajax({ url: $yaml_file, success: function (file_content) {
     var level_zero = YAML.eval(file_content);
     console.log('\n');
+
+
     for (var level_one in level_zero.faqs) {
 
       $thumbnail_content = "";
@@ -28,6 +30,7 @@ jQuery(document).ready( function($){
               $thumbnail_content += "</div>";
 
               // $top_wrap_content  += anchor 
+              $top_wrap_content  += "<div class=\"dancing-cursive\"> <h2> Q: </h2></div>";
               $top_wrap_content  += "<h2>";
               $top_wrap_content  += level_zero.faqs[level_one][level_two][level_three];
               $top_wrap_content  += "</h2>";
