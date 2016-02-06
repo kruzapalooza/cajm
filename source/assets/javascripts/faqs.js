@@ -26,14 +26,17 @@ jQuery(document).ready( function($){
             if (level_three === 'question') { 
 
               $thumbnail_content += "<div class=\"thumbnail-title\">";
-              $thumbnail_content += level_zero.faqs[level_one][level_two][level_three];
+              $thumbnail_content +=   level_zero.faqs[level_one][level_two][level_three];
               $thumbnail_content += "</div>";
 
               // $top_wrap_content  += anchor 
-              $top_wrap_content  += "<div class=\"dancing-cursive\"> <h2> Q: </h2></div>";
-              $top_wrap_content  += "<h2>";
+              $top_wrap_content  += "<div class=\"dancing-cursive big-q\">";
+              $top_wrap_content  +=   "Q";
+              $top_wrap_content  += "</div>";
+              $top_wrap_content  += "<div class=\"top-wrap description\">";
               $top_wrap_content  += level_zero.faqs[level_one][level_two][level_three];
-              $top_wrap_content  += "</h2>";
+              $top_wrap_content  += "</div>";
+              
               /*
               <a class="anchor" id="cajm-goals-growth"></a>
               <h2>

@@ -446,6 +446,7 @@ body {
           font-size: 24pt; 
           color: $text-gray;
           text-align: center;
+
         }
         h3 {
           font-family: Arial;
@@ -455,6 +456,14 @@ body {
           color: $text-gray;
           text-align: center;
         }
+      }
+
+      .dancing-cursive.big-q {
+        font-family: "Dancing Script";
+        color: $text-gray;
+        color: purple;
+        font-size: 24pt;
+        text-align: left;
       }
 
       h2 {
