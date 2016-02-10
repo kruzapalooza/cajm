@@ -28,24 +28,13 @@ jQuery(document).ready( function($){
               $thumbnail_content += "<div class=\"thumbnail-title\">";
               $thumbnail_content +=   level_zero.faqs[level_one][level_two][level_three];
               $thumbnail_content += "</div>";
-
-              // $top_wrap_content  += anchor 
-              $top_wrap_content  += "<div class=\"dancing-cursive big-q\">";
-              $top_wrap_content  +=   "Q";
-              $top_wrap_content  += "</div>";
+ 
               $top_wrap_content  += "<div class=\"top-wrap description\">";
+              $top_wrap_content  +=   "<span class=\"dancing-cursive big-q\">";
+              $top_wrap_content  +=     "Q:";
+              $top_wrap_content  +=   "</span>";
               $top_wrap_content  += level_zero.faqs[level_one][level_two][level_three];
               $top_wrap_content  += "</div>";
-              
-              /*
-              <a class="anchor" id="cajm-goals-growth"></a>
-              <h2>
-                  Q: What are CAJM's goals for growth and expansion? 
-              </h2> 
-              <h2>
-                  A: The general goals of CAJM include:
-              </h2>  
-              */
             }
 
             if (level_three === 'answer') {
@@ -54,11 +43,14 @@ jQuery(document).ready( function($){
               $thumbnail_content += level_zero.faqs[level_one][level_two][level_three];
               $thumbnail_content += "</div>";
 
-              // $top_wrap_content  += level_zero.faqs[level_one][level_two][level_three];            
+              $top_wrap_content  += "A: "; 
+              $top_wrap_content  += level_zero.faqs[level_one][level_two][level_three];
+           
             }
 
             if (level_three === 'answer_p') {
               console.log('P');
+
             }        
 
             if (level_three === 'answer_ol') {
