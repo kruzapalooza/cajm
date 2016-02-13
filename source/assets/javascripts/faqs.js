@@ -61,8 +61,41 @@ jQuery(document).ready( function($){
               console.log('T');
             } 
 
+            // print a list (formatted as two columns) to html.
             if (level_three === 'two_column_list') {
               console.log('2CL');
+              
+              // start on the top left row... 
+              var which_side = "left";
+              $top_wrap_content  += "<table style=\"width:50%\">"
+
+              // print in this order: row1-columnleft, row1-columnright,
+              // row2-columnleft, etc.
+              for (var level_four in level_zero.faqs[level_one]
+              [level_two][level_three]) {
+
+                var this_cell = level_zero.faqs[level_one]
+                [level_two][level_three][level_four].li;
+                
+                if (which_side === "left")  { 
+                  $top_wrap_content  += "<tr>";
+                  $top_wrap_content  +=   "<td>";
+                  $top_wrap_content  +=  this_cell;
+                  $top_wrap_content  +=   "</td>";
+                }
+                else if (which_side === "right") { 
+                  $top_wrap_content  +=   "<td>";                 
+                  $top_wrap_content  +=  this_cell;
+                  $top_wrap_content  +=   "</td>";
+                  $top_wrap_content  += "</tr>";
+                }
+
+                // switch what side of column we're printing on
+                if (which_side === "left")  { which_side = "right"; }
+                else if (which_side === "right") { which_side = "left"; }
+              }
+
+              $top_wrap_content  += "</table>"
             } 
           } 
 
