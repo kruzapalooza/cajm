@@ -49,23 +49,66 @@ jQuery(document).ready( function($){
             }
 
             if (level_three === 'answer_p') {
-              console.log('P');
 
             }        
 
             if (level_three === 'answer_ol') {
-              console.log('OL');
             } 
 
+            // print table 
             if (level_three === 'answer_table') {
-              console.log('T');
+
+              // table start
+              var row_type = "header";
+              $top_wrap_content  += "<table style=\"width:50%\">"
+
+              // iterate through each table row (key, value) and print it
+              for (var level_four in level_zero.faqs[level_one]
+              [level_two][level_three]) {
+
+                // use simple var names instead of long array indices
+                var this_key = level_four; 
+                var this_value = level_zero.faqs[level_one]
+                [level_two][level_three][level_four];                
+
+                // print header row...
+                if (row_type === "header") {
+                  $top_wrap_content  += "<tr>";
+                  $top_wrap_content  +=   "<th>";
+                  $top_wrap_content  +=     this_key;
+                  $top_wrap_content  +=   "</th>";
+                  $top_wrap_content  +=   "<th>";
+                  $top_wrap_content  +=     this_value;
+                  $top_wrap_content  +=   "</th>";
+                  $top_wrap_content  += "</tr>";
+                }
+                
+                // print each row, then print the data rows
+                else {
+                  $top_wrap_content  += "<tr>";
+                  $top_wrap_content  +=   "<td>";
+                  $top_wrap_content  +=     this_key;
+                  $top_wrap_content  +=   "</td>";
+                  $top_wrap_content  +=   "<td>";
+                  $top_wrap_content  +=     this_value;
+                  $top_wrap_content  +=   "</td>";
+                  $top_wrap_content  += "</tr>";
+                }
+
+                console.log(this_key);
+                console.log(this_value);     
+
+                row_type = "data";           
+              }
+
+              // end table
+              $top_wrap_content  += "</table>"
             } 
 
-            // print a list (formatted as two columns) to html.
+            // print list (formatted as two columns) to html.
             if (level_three === 'two_column_list') {
-              console.log('2CL');
               
-              // start on the top left row... 
+              // table start on the top left row... 
               var which_side = "left";
               $top_wrap_content  += "<table style=\"width:50%\">"
 
@@ -95,6 +138,7 @@ jQuery(document).ready( function($){
                 else if (which_side === "right") { which_side = "left"; }
               }
 
+              // end table
               $top_wrap_content  += "</table>"
             } 
           } 
