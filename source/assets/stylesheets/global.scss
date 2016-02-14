@@ -25,6 +25,8 @@ $light-blue-bg: #13747D; /* light blue */
 $forest-green-bg: #668C4D;
 $wrap-highlight: #83555E; /* reddish */
 $button-border: #FFFFFF;
+$big-q-color: #56416C;
+$big-a-color: #FFF7C0;
 
 $title-bg: #000000;
 $graphic-bg: #333333; /* same as wrap bg */
@@ -460,12 +462,19 @@ body {
 
       .dancing-cursive.big-q {
         font-family: "Dancing Script";
-        color: $text-gray;
-        color: purple;
+        color: $big-q-color;
         font-size: 24pt;
         text-align: left;
         margin-right: 1rem;
       }
+
+      .dancing-cursive.big-a {
+        font-family: "Dancing Script";
+        color: $big-a-color;
+        font-size: 24pt;
+        text-align: left;
+        margin-right: 1rem;
+      }      
 
       h2 {
         font-size: 15pt;

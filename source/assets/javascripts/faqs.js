@@ -43,13 +43,15 @@ jQuery(document).ready( function($){
               $thumbnail_content += level_zero.faqs[level_one][level_two][level_three];
               $thumbnail_content += "</div>";
 
-              $top_wrap_content  += "A: "; 
+              $top_wrap_content  +=   "<span class=\"dancing-cursive big-a\">";
+              $top_wrap_content  +=     "A: ";
+              $top_wrap_content  +=   "</span>";
               $top_wrap_content  += level_zero.faqs[level_one][level_two][level_three];
            
             }
 
             if (level_three === 'answer_p') {
-
+              $top_wrap_content  += level_zero.faqs[level_one][level_two][level_three];
             }        
 
             if (level_three === 'answer_ol') {
@@ -82,7 +84,7 @@ jQuery(document).ready( function($){
                   $top_wrap_content  +=   "</th>";
                   $top_wrap_content  += "</tr>";
                 }
-                
+
                 // print each row, then print the data rows
                 else {
                   $top_wrap_content  += "<tr>";
@@ -93,10 +95,7 @@ jQuery(document).ready( function($){
                   $top_wrap_content  +=     this_value;
                   $top_wrap_content  +=   "</td>";
                   $top_wrap_content  += "</tr>";
-                }
-
-                console.log(this_key);
-                console.log(this_value);     
+                }  
 
                 row_type = "data";           
               }
