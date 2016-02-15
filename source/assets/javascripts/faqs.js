@@ -51,10 +51,26 @@ jQuery(document).ready( function($){
             }
 
             if (level_three === 'answer_p') {
-              $top_wrap_content  += level_zero.faqs[level_one][level_two][level_three];
+              $top_wrap_content  += "<p>";
+              $top_wrap_content  +=   level_zero.faqs[level_one][level_two][level_three];
+              $top_wrap_content  += "</p>";
             }        
 
             if (level_three === 'answer_ol') {
+              $top_wrap_content  += "<ol>";
+
+              for (var level_four in level_zero.faqs[level_one]
+              [level_two][level_three]) {
+
+                var list_item = level_zero.faqs[level_one]
+                [level_two][level_three][level_four].li;            
+               
+                $top_wrap_content  += "<li>";
+                $top_wrap_content  +=   list_item;
+                $top_wrap_content  += "</li>";
+              }
+                
+              $top_wrap_content  += "</ol>";
             } 
 
             // print table 
