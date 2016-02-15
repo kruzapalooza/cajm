@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title> CAJM FAQs </title> 
+
+    <script type="text/javascript" >
+        document.title = "CAJM FAQs";
+    </script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/stylesheets/global.css" />
+    
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' 
+        rel='stylesheet' type='text/css'>
+
+    <script src="/assets/javascripts/jquery-1.11.3.min.js">
+    </script>
+
+    <script src="/assets/javascripts/yaml_min.js">
+    </script>
+
+    <script src="/assets/javascripts/faqs.js">
+    </script>  
+
+        
+</head>
+
+<!-- begin page wrapper and body -->
+<body> 
+
+
+    <div class="screen_wide_spacer"> </div>
+    
+    <div class="thumbnail-wrap" id="thumbnail-wrap-faqs">
+
+        <div class="banner">
+            <span class="banner-title"> 
+               FAQs
+            </span>
+        </div>
+
+        <div class="thumbnail"> 
+            <div class="thumbnail-title"> 
+                Q: What are CAJM's general goals? 
+            </div>    
+            <div class="thumbnail-descr"> 
+                A: The general goals of the Charleston Area Justice Ministry (CAJM) include:
+            </div>
+            <div class="button-link">
+                <ul>
+                    <li>        
+                        <a href="#cajm-goals-general"> 
+                            <span> CAJM General Goals </span>
+                        </a>                                        
+                    </li>       
+                </ul> 
+            </div> 
+        </div>
+
+        <div class="thumbnail"> 
+            <div class="thumbnail-title"> 
+                Q: What are CAJM's goals for growth and expansion?
+            </div> 
+            <div class="thumbnail-descr"> 
+                A: The expansion goals of CAJM include:
+            </div>
+            <div class="button-link">
+                <ul>
+                    <li>        
+                        <a href="#cajm-goals-growth"> 
+                            <span> CAJM Expansion Goals </span>
+                        </a>                                        
+                    </li>       
+                </ul> 
+            </div> 
+        </div>
+
+        <div class="thumbnail"> 
+            <div class="thumbnail-title">
+                Q: What Congregations are Members of CAJM?
+            </div>
+            <div class="thumbnail-descr"> 
+                A: Members of the Charleston Area Justice Ministry (CAJM) ...
+            </div>
+            <div class="button-link">
+                <ul>
+                    <li>        
+                        <a href="#member-congregations"> 
+                            <span> Member Congregations </span>
+                        </a>                                        
+                    </li>       
+                </ul> 
+            </div> 
+        </div>
+
+        <div class="thumbnail"> 
+            <div class="thumbnail-title">
+                Q: Celebration and Investment Drive Kick-Off
+            </div>
+            <div class="thumbnail-descr"> 
+                Location: TBD 
+                Time: Mon 5/23/2016 7pm
+            </div>
+            
+            <div class="button-link">
+                <ul>
+                    <li>        
+                        <a href="/faqs.html#celebration"> 
+                            <span> Celebration </span>
+                        </a>                                        
+                    </li>       
+                </ul> 
+            </div> 
+        </div>
+
+    </div>
+
+    <div class="banner" id="banner-faqs">
+        <span class="banner-title">
+            FAQs
+        </span>
+
+        <div class="graphic">
+            <img src="assets/images/cajm.png"
+            width="225" height="100"/>     
+        </div>
+        
+        <div class="top-wrap" id="#top-wrap-faqs">
+            <a class="anchor" id="cajm-goals-general"></a>           
+            <h2>
+                Q: What are CAJM's general goals? 
+            </h2> 
+            <h2>
+                A: The general goals of the Charleston Area Justice Ministry (CAJM) include:
+            </h2> 
+
+            <ol>
+                <li> 
+                    To build strong relationships among religious congregations.
+                </li>
+                <li>
+                    To develop a culture of accountability within CAJM and to hold public institutions accountable to address local community issues of concern to member congregations through a process of education, research, action, and reflection.
+                </li>
+                <li>
+                    To strengthen member congregations by training existing leaders in organizing skills, identifying new leaders, and building justice ministry networks.
+                </li>
+                <li>
+                    To enable member congregations to act successfully on shared values of justice and fairness.
+                </li>
+            </ol>
+
+        </div>
+
+        <div class="top-wrap">
+            <a class="anchor" id="cajm-goals-growth"></a>
+            <h2>
+                Q: What are CAJM's goals for growth and expansion? 
+            </h2> 
+            <h2>
+                A: The general goals of CAJM include:
+            </h2>   
+
+            <table style="width:50%"> 
+                <tr>
+                    <th> Goal </th> 
+                    <th> 2012 </th> 
+                    <th> 2013 </th> 
+                    <th> 2014 </th>
+                    <th> 2015 </th>
+                </tr>                
+                <tr>
+                    <td> Nehemiah Turnout </td> 
+                    <td> 0 </td> 
+                    <td> 1500 </td> 
+                    <td> 2250 </td>              
+                    <td> 3000 </td>
+                </tr>
+                <tr>
+                    <td> Congregations </td> 
+                    <td> 25 </td> 
+                    <td> 33 </td> 
+                    <td> 41 </td>              
+                    <td> 50 </td>
+                </tr>
+                <tr>
+                    <td> Network Member Needed </td> 
+                    <td> 0 </td> 
+                    <td> 375 </td> 
+                    <td> 563</td>              
+                    <td> 750 </td>
+                </tr>
+                <tr>
+                    <td> Staff </td> 
+                    <td> 1 </td> 
+                    <td> 1.5 (Jul) </td> 
+                    <td> 3 (Jan) </td>              
+                    <td> 4 (Jan) </td> 
+                </tr>
+                <tr>
+                    <td> Budget </td>
+                    <td> 66* </td> 
+                    <td> 144** </td> 
+                    <td> 213 </td> 
+                    <td> 261 </td>                   
+                </tr>
+                <tr>
+                    <td> Dues </td>
+                    <td> 30 </td> 
+                    <td> 50 </td> 
+                    <td> 60 </td> 
+                    <td> 65 </td>                   
+                </tr>   
+                <tr>
+                    <td> Member Drive </td>
+                    <td> 5 </td> 
+                    <td> 30 </td> 
+                    <td> 50 </td> 
+                    <td> 75 </td>                   
+                </tr>   
+                <tr>
+                    <td> Corporate </td>
+                    <td> 0 </td> 
+                    <td> 20 </td> 
+                    <td> 30 </td> 
+                    <td> 40 </td>                   
+                </tr> 
+                <tr>
+                    <td> Grants </td>
+                    <td> 31 </td> 
+                    <td> 44 </td> 
+                    <td> 73 </td> 
+                    <td> 81 </td>                   
+                </tr>                                
+            </table>
+                <p>
+                    *Add 000
+                </p>
+                <p>
+                    ** Includes $20,000 contribution to the reserve
+                </p>
+                <p>
+                    *** Add 3% inflation + 43,000/ new organizer 
+                </p>
+
+        </div>
+
+        <div class="top-wrap">
+            <a class="anchor" id="member-congregations"></a>
+            <h2>
+                Q: What Congregations are Members of CAJM? 
+            </h2> 
+            <h2>
+                A: Members of the Charleston Area Justice Ministry (CAJM) ...
+            </h2>
+            <p> 
+                are clergy and lay leaders representing local congregations of faith communities in the Charleston Area (Charleston, Berkeley, and Dorchester Counties) who express interest in achieving the goals of CAJM and who make a financial investment.  New congregations will be accepted into CAJM membership by majority vote of the CAJM Members present at a duly called meeting.  The following congregations are members:
+
+                <table style="width:50%"> 
+                    <tr>
+                        <td> Bethel Presbyterian* </td> 
+                        <td> Blessed Sacrament Catholic* </td> 
+                    </tr>                
+                    <tr>
+                        <td> Calvary Baptist </td> 
+                        <td> Calvary Episcopal* </td> 
+                    </tr>
+                        <td> Charity Missionary Baptist* </td> 
+                        <td> Church of the Holy Communion* </td>
+                    <tr>
+                        <td> Circular Congregational* </td>
+                        <td> First Scots Presbyterian* </td>
+                    </tr>
+                    <tr>
+                        <td> Graham AME* </td>
+                        <td> Holy Trinity Windermere </td>
+                    </tr>
+                    <tr>
+                        <td> Hope Assembly* </td>
+                        <td> Kahal Kadosh Beth Elohim* </td>
+                    </tr>
+                    <tr>
+                        <td> Morris Brown AME* </td>
+                        <td> Morris St. Baptist </td>   
+                    </tr>
+                    <tr>
+                        <td> New Tabernacle Fourth Baptist* </td>
+                        <td> Nichols Chapel AME* </td>                    
+                    </tr>
+                    <tr>
+                        <td> North Charleston United Methodist* </td>
+                        <td> Second Presbyterian* </td>                     
+                    </tr>
+                    <tr>
+                        <td> St. Francis Episcopal* </td>
+                        <td> St. James Presbyterian* </td> 
+                    </tr>
+                    <tr>
+                        <td> St. John Catholic* </td>
+                        <td> St. Matthew Baptist* </td> 
+                    </tr>
+                    <tr>
+                        <td> Mt. Zion AME* </td>
+                        <td> St. Peter’s AME* </td>
+                    </tr>
+                    <tr>
+                        <td> Unitarian Church in Charleston* </td>
+                        <td> Wallingford Presbyterian* </td>
+                    </tr>
+                    <tr>
+                        <td> YMCA of Charleston* </td>
+                        <td> </td>
+                    </tr>                    
+                </table>
+                * Denotes congregations that have signed the CAJM covenanting statement.
+            </p>  
+
+        </div>
+
+        <div class="top-wrap">
+            <h2>
+                Q: What faith communities currently support CAJM?
+            </h2> 
+            <h2>
+                A: CAJM is currently supported by clergy and laity from more than a dozen faith communities, including: 
+            </h2>
+            <p>
+                African Methodist Episcopal (AME), Baptist, Congregational, Anglican, Episcopalian, Greek Orthodox, Lutheran, Orthodox Union of Judaism, Presbyterian, Roman Catholic, Union of Reform Judaism, Unitarian, and United Methodist. 
+            </p>     
+        </div>
+
+        <div class="top-wrap">
+
+            <h2>
+                Q: What Happened at the CAJM Community Problems Assembly on November 16, 2015?
+            </h2>
+
+            <h2>
+                A: On Monday, November 16, 2015 CAJM congregations packed the house (Blessed Sacrament Catholic Church) for the CAJM Community Problems Assembly. 
+            </h2>
+             
+            <p> 
+                With 617 people in attendance, CAJM had 552 voting Network Members, the voting went as follows: Racial Discrimination, with 349 votes (63% of all votes), will be the problem area that we focus on this justice cycle. Public Transportation received 135 votes and Affordable Housing received 68 votes. It was put to the gathered body, and unanimously passed, that we would also continue to work on juvenile incarceration by focusing on school-based arrests. Thank you to everyone who made their voices heard by being a part of the Community Problems Assembly!
+            </p>
+            <p>
+                Another very exciting part of the evening was that we welcomed three new member congregations/organizations! The YWCA of Charleston, St. Francis Episcopal, and Bethel Presbyterian have all joined our ranks and that growth is wonderful to see. Those in attendance also voted to install new CAJM Board Members whose terms begin January 1, 2016.
+            </p>
+
+        </div>
+
+        <div class="top-wrap">
+
+            <a class="anchor" id="research-kickoff"></a>  
+            <h2>
+                Q: What Happened at the CAJM Research Kick-Off on December 7, 2015?
+            </h2>
+
+            <h2>
+                On Monday night 12/7/2015 at St. James Presbyterian over 150 people attended the Research Kick-off! 
+            </h2>
+
+            <p>
+                They came out ready to engage in great research over these next couple of months! Racial Discrimination was the issue voted as the subject for the Nehemiah Action scheduled for April 18, 2016.
+            </p>
+            <p> 
+                Those people that attended had an opportunity to sign up for the committee on which they wanted to serve. The active committee options were: Racial Discrimination, School Based Arrests, PBIS & Restorative Justice, and the Hiring Policy. 
+            </p>
+            <p> 
+                Research visits have started.
+            </p>
+
+        </div>
+
+        <div class="top-wrap">
+
+            <h2>
+                Q: What Happened at the CAJM Team Assembly on October 26, 2015?
+            </h2>
+
+            <h2>
+                A: What an amazing Team Assembly tonight!
+            </h2>
+
+            <p>
+                There was so much energy and excitement as we heard reports from the house meetings about the very serious community problems raised. After sharing, the voting was narrowed down into several broad categories: Affordable Housing, Gun Violence, Racial Discrimination, Domestic Violence, Substance Abuse and Addiction, Mental Health, Public Transportation, Health Care, Criminal Justice System and Education. One hundred Team Leaders voted on behalf of their house meetings and Network Members and the voting results were as follows:
+            </p>
+
+            <table style="width:75%"> 
+                <tr>
+                  <th> Issue </th> 
+                  <th> Votes </th> 
+                </tr>                
+                <tr>
+                  <td> Domestic Violence </td> 
+                  <td> 0 </td> 
+                </tr>
+                <tr>
+                  <td> Education </td> 
+                  <td> 6 </td> 
+                </tr>    
+                <tr>
+                  <td> Affordable Housing </td> 
+                  <td> 19 </td> 
+                </tr>  
+                <tr>
+                  <td> Racial Discrimination </td> 
+                  <td> 49 </td> 
+                </tr>  
+                <tr>
+                  <td> Gun Violence </td> 
+                  <td> </td> 
+                </tr>  
+                <tr>
+                  <td> Public Transportation </td> 
+                  <td> 12 </td> 
+                </tr>  
+                <tr>
+                  <td> Substance Abuse/Addiction </td> 
+                  <td> 0 </td> 
+                </tr>                  
+                <tr>
+                  <td> Mental Health </td> 
+                  <td> 5 </td> 
+                </tr>            
+                <tr>
+                  <td> Health Care </td> 
+                  <td> 2 </td> 
+                </tr>  
+                <tr>
+                  <td> Criminal Justice System </td> 
+                  <td> 0 </td> 
+                </tr>                                      
+            </table>
+
+        </div>
+
+        <div class="top-wrap">
+            <h2>
+                Q: What if my congregation is not a member of CAJM?
+            </h2>
+            <h2>
+                A: If your congregation is interested in joining CAJM...
+            </h2>
+            <p>       
+                please have the clergy contact Ms. Treva Williams, CAJM Lead Organizer at Treva@thedartcenter.org or mobile 620-704-1062.  If your congregation is not a member, and you are personally interested in getting involved, please come to our next meeting!  We welcome all who want to work for justice.
+            </p>
+        </div>
+
+        <div class="top-wrap">
+            <a class="anchor" id="celebration"> </a>
+
+            <h2>
+                Q: What is the CAJM Celebration?
+            </h2>
+            <h2>
+                A: Everyone is invited to celebrate the successes and progress of CAJM so far and invited to invest at least $200 or more to kick-off the Investment Drive to keep CAJM self-sustaining moving forward. 
+            </h2>
+        </div>
+
+        <div class="top-wrap">
+            <h2>
+                Q: What is the CAJM Community Problems Assembly?
+            </h2>
+            <h2>
+                A: Team leaders, clergy, and network members come together to share testimonies then vote for one of the top 3 issues identified at the Team Assembly II to be worked on this cycle; new congregations are officially covenanted, and nominees for the Executive Board are processed.
+            </h2>
+        </div>
+
+        <div class="top-wrap">
+            <a class="anchor" id="nehemiah-action"> </a>
+            <h2>
+                Q: What is the CAJM Nehemiah Action?
+            </h2>
+            <h2>
+                A: Everyone is invited to come and bring at least three other people with them to powerfully gain commitments from the public official(s) invited to implement CAJM's well researched plan of action to solve serious community issues.
+            </h2>
+        </div>
+
+        <div class="top-wrap">
+            <a class="anchor" id="rally"> </a>
+            <h2>
+                Q: What is the CAJM Rally?
+            </h2>
+            <p>
+                Team leaders, clergy, and network members across DART rally together and get fired up about the final results of the research, the plan of action chosen, and the public official(s) identified to come to the large Nehemiah Action so they can go out and excitedly invite at least 3 other people to come.
+            </p>
+        </div>   
+
+        <div class="top-wrap"> 
+            <h2>     
+                Q: What is the CAJM Research-to-Action Kick-Off?
+            </h2>
+            <h2>
+                A: Team leaders, clergy, and network members involved in the research process come together to learn about the current issue work CAJM is undertaking and the strategy, breaking out into specific research committees. 
+            </h2>    
+        </div>
+
+        <div class="top-wrap">
+        <h2>
+            Q: What is the CAJM Team Assembly II?
+        </h2>
+        <h2>
+            A: Team leaders across CAJM come together to report on the intimate house meetings they hosted (over 100 total) ... 
+        </h2>
+        <p>
+            where people discussed the problems they face in their personal life and the community, identifying the top 3 to be voted on later for research and action by the entire CAJM network.
+        </p>
+        </div>
+
+        <div class="top-wrap">
+            <h2>
+                Q: What is the DART Clergy Conference?    
+            </h2>
+            <h2>
+                A: Clergy and lay leaders across the DART network come together to re-center themselves around the Scriptural call to do justice.
+            </h2>
+        </div>
+
+        <div class="top-wrap">
+            <h2>
+                Q: What is the DART Research-to-Action Advanced Leaders Training Institute?
+            </h2>
+            <h2>
+                A: Team leaders and clergy across the DART network come together to train on how to break down identified issues into specific winnable solutions and gain the commitment of responsible public officials.
+            </h2>
+        </div>
+
+        <div class="top-wrap">
+            <h2>
+                Q: What is the mission of CAJM?
+            </h2>
+            <h2>
+                A: The Charleston Area Justice ministry (CAJM) shall build ...
+            </h2>
+            <p>
+                a powerful capability to negotiate the interests of our community and be committed to doing justice.  CAJM is comprised of a diverse group of religious congregations.  Having been founded by religious congregations, CAJM is based on the values of justice and compassion as shared values of our faith traditions.
+            </p>
+        </div>
+
+        <div class="top-wrap">
+            <h2>
+                Q: What justice problems are there in the Charleston area?
+            </h2>
+            <h2>
+                A: The Charleston area includes Charleston (population 665,000), Berkeley (population 178,000), and Dorchester (population 137,000) Counties.  
+            </h2>
+            <p>
+                Using Charleston County as an example, over 16% of the population is below the poverty level, unemployment is above 9%, illiteracy is 14%, and 19% are uninsured.  Conversations among the clergy and laity have identified justice problems in education, housing, unemployment, crime, health care, addiction, incarceration policy, and others.  CAJM congregations have a strong desire to build relationships across racial, cultural, religious, and geographic barriers in order to powerfully address justice problems in the Charleston area.
+            </p>
+        </div>
+
+        <div class="top-wrap">    
+            <h2>    
+                Q: What were CAJM's activities in 2012?
+            </h2>
+
+            <table style="width:75%"> 
+                <tr>
+                    <td> 6/28 - 7/14 </td>
+                    <td> 
+                        Lead Organizer meets w/ Clergy to set goals for N.A., create a list of potential Team Members, create a household map and set Team Meeting date. 
+                    </td>
+                </tr>                             
+                <tr>
+                    <td> 7/15 - 8/19 </td> 
+                    <td> 
+                        L.O. does 1-1s to help identify potential Team Members 
+                    </td> 
+                </tr>
+                <tr>
+                    <td> 7/25 </td> 
+                    <td> 
+                        Executive Committee meets to create 3 year plan (12-3:00 pm) 
+                    </td> 
+                </tr>    
+                <tr>
+                    <td> 7/26 </td> 
+                    <td> 
+                        Ex. Comm at 9:30 AM and CAISC at 11:00 
+                        (location-Charity Missionary Baptist) 
+                    </td> 
+                </tr>  
+                <tr>
+                    <td> 7/20 - 9/9 </td> 
+                    <td> 
+                        Justice Ministry Team Meetings 
+                    </td> 
+                </tr>  
+                <tr>
+                  <td> 8/30 </td> 
+                  <td> CAISC </td> 
+                </tr>  
+                <tr>
+                    <td> 9/10 </td> 
+                    <td> 
+                        JM Team Assembly 
+                        (House Meeting Training for all Team Members)
+                    </td> 
+                </tr>  
+                <tr>
+                    <td> 9/11 - 10/14 </td> 
+                    <td> 
+                        House Meetings(surface community problems and 
+                        confirm network members)
+                    </td> 
+                </tr>                  
+                <tr>
+                    <td> 10/15 </td> 
+                    <td> 
+                        JM Team Assembly (problems from house meetings 
+                        get narrowed down to 5 or 6) 
+                    </td> 
+                </tr>            
+                <tr>
+                    <td> 10/29 </td> 
+                    <td> 
+                        Covenanting and Community Problems Assembly
+                        (all network members attend. We’ll vote on 1 or 2 problems to address.) 
+                    </td> 
+                </tr>  
+                <tr>
+                    <td> 11/13 - 11/17 </td> 
+                    <td>             
+                        ALTI (Advanced Leadership Training Institute)
+                        prepare for the research to action phase 
+                    </td> 
+                </tr>    
+                <tr>
+                    <td> 12/3 </td> 
+                    <td>             
+                       Research Kickoff (form research committees)
+                    </td> 
+                </tr>                                   
+            </table>
+
+            <table style="width:75%"> 
+                <tr>
+                    <td> 
+                        52 to 1
+                    </td>
+                    <td> 
+                        52 times a year we turn out our average worship (weekly) attendance to do faithfulness ministry.  We should be able to turn out our AWA to do justice 1 time during the year.
+                    </td>
+                </tr> 
+                <tr>
+                    <td> 
+                        Congregational Goal
+                    </td>
+                    <td> 
+                        Turn out your Average Worship Attendance to a Nehemiah Action.
+                    </td>
+                </tr>  
+                <tr>
+                    <td> 
+                        Network Members...
+                    </td>
+                    <td> 
+                        agree to bring 3 people with them to the Nehemiah Action and attend 3 other events throughout the year (Community Problems Assembly, Rally and The Celebration).  Network members can also participate in research committees and will be given an opportunity to financially invest in the organization.
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        Team Members...
+                    </td>
+                    <td> 
+                        are network members who agree to bring 3 to the Nehemiah Action AND recruit and organize 10 people to be in their network.  They also attend Team Assemblies, Team Meetings, the CPA, Rally and Celebration.
+                    </td>                    
+                </tr>   
+            </table>
+
+            <table style="width:75%"> 
+                <tr>
+                    <td> 
+                        Wallingford Presbyterian
+                    </td>
+                    <td> 
+                        Thursday, Aug 2 @ 7:00 PM
+                    </td>
+                </tr> 
+                <tr>
+                    <td> 
+                        New Tabernacle 4th Baptist
+                    </td>
+                    <td> 
+                        Monday, Aug 13 @ 6:30  PM
+                    </td>
+                </tr> 
+                <tr>
+                    <td> 
+                        St. John’s Catholic Church
+                    </td>
+                    <td> 
+                        Tuesday, Aug 14 @ 7:00 PM
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        Unitarian Universalist
+                    </td>
+                    <td> 
+                        Wednesday, Aug 15 @ 12:15 PM
+                    </td>
+                </tr> 
+                <tr>
+                    <td> 
+                        Morris Brown AME
+                    </td>
+                    <td> 
+                        Wednesday, Aug 15 @ 6:00 PM
+                    </td>
+                </tr>  
+                <tr>
+                    <td> 
+                        St. James Presbyterian
+                    </td>
+                    <td> 
+                        Thursday, Aug 16 @ 7:00 PM
+                    </td>
+                </tr>  
+                <tr>
+                    <td> 
+                        Blessed Sacrament Catholic Church
+                    </td>
+                    <td> 
+                        Monday, Aug 20 @ 6:30 PM
+                    </td>
+                </tr>    
+                <tr>
+                    <td> 
+                        Circular 
+                    </td>
+                    <td> 
+                        Wednesday, Aug 22 @ 7:00 PM
+                    </td>
+                </tr>  
+                <tr>
+                    <td> 
+                        First Scots Presbyterian 
+                    </td>
+                    <td> 
+                        Thursday, Aug 23 @ 5:15 PM
+                    </td>
+                </tr>     
+                <tr>
+                    <td> 
+                        Grace Episcopal and St. Mark’s 
+                    </td>
+                    <td> 
+                        Thursday, Aug 30 @ 6:00 PM
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        Church of the Holy Communion 
+                    </td>
+                    <td> 
+                        Tuesday, Sept 4 @ 7:00 PM
+                    </td>
+                </tr>
+            </table>
+
+            <p> Treva’s contact info </p>
+            <p> treva@thedartcenter.org </p>
+            <p> 620-704-1062 (cell) </p>
+            
+        </div>
+
+        <div class="top-wrap">
+            <h2>
+                Q: Who may attend CAJM meetings?
+            </h2>
+            <h2>
+                A: We invite all persons who are interested in developing a powerful justice ministry in the Charleston area ...
+            </h2>
+            <p>
+                (Charleston, Berkeley, and Dorchester Counties) and elsewhere to attend Charleston Area Justice Ministry (CAJM) meetings.  Please feel free to extend this invitation to other clergy and lay people. 
+            </p>
+        </div>
+
+        <div class="top-wrap">
+            <h2>
+                Q: With whom does CAJM work to achieve its goals?
+            </h2>
+            <h2>
+                A: CAJM works with the Direct Action and Research Training Center, Inc. (DART) to achieve its goals.   
+            </h2>
+            <p>
+                The DART Lead Community Organizer, Ms. Treva Williams, facilitates CAJM's ministry.  DART is committed to building powerful, diverse, congregation-based and democratically-run organizations capable of winning justice on issues facing the community. Since 1982, DART has built and strengthened over twenty locally affiliated organizations in five states and trained over 10,000 community leaders and 150 professional Community Organizers.
+            </p>
+        </div>        
+
+    </div>
+
+
+
+
+
+
+</body> 
+
+</html>
