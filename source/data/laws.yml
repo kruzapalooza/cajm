@@ -1,16 +1,14 @@
-faqs:
-    -   q_a: 
-            question: "What are CAJM's general goals?"      
-            answer: "The general goals of the Charleston Area Justice Ministry (CAJM) include:"        
-            answer_ol: 
-                - li: "To build strong relationships among religious congregations."
-                - li: "To develop a culture of accountability within CAJM and to hold public institutions accountable to address local community issues of concern to member congregations through a process of education research, action, and reflection."
-                - li: "To strengthen member congregations by training existing leaders in organizing skills, identifying new leaders, and building justice ministry networks."
-                - li: "To enable member congregations to act successfully on shared values of justice and fairness."    
-    -   q_a: 
-            question: "Which Congregations are Members of CAJM?"
-            answer: "Members of the Charleston Area Justice Ministry (CAJM)"
-            answer_p: "are clergy and lay leaders representing local congregations of faith communities in the Charleston Area (Charleston, Berkeley, and Dorchester Counties) who express interest in achieving the goals of CAJM and who make a financial investment. New congregations will be accepted into CAJM membership by majority vote of the CAJM Members present at a duly called meeting. The following congregations are members:"
+laws:
+    preamble: 
+        title: "CAJM is an organization composed of religious congregations and other community organizations.  Our member organizations, of diverse racial, religious, and economic backgrounds, pledge to work together to research and conduct public education to address the root causes of poverty and injustice, through the empowerment of marginalized people."
+    -   article: 
+        title: "Incorporation"
+        -   section: The name of this organization shall be “Charleston Area Justice Ministry (CAJM)”. 
+        -   section: "CAJM shall be a non-profit corporation, established in accordance with section 501 (c)(3) of the Tax Code of the Internal Revenue Service and the laws of the State of South Carolina."
+        -   section: "Authority is vested in the Annual Assembly, which is the ultimate decision-making body for the organization which delegates authority and responsibility between meetings to the Leadership Senate."
+    -   article: 
+        -   section: "CAJM shall maintain an affiliation with the Direct Action and Research Training Center, Inc. (DART)." 
+        -   section: "CAJM shall rely on DART to provide training and consulting support for CAISC leaders and to recruit and train new organizing staff."
             two_column_list: 
                 - li:  "Bethel Presbyterian"
                 - li:  "Blessed Sacrament Catholic*"

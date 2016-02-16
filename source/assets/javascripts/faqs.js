@@ -3,67 +3,73 @@ var $yaml_file = "/data/faqs.yml";
 jQuery(document).ready( function($){
 
   $.ajax({ url: $yaml_file, success: function (file_content) {
-    var level_zero = YAML.eval(file_content);
+    var l0 = YAML.eval(file_content);
     console.log('\n');
 
 
-    for (var level_one in level_zero.faqs) {
+    for (var l1 in l0.faqs) {
 
       $thumbnail_content = "";
       $top_wrap_content  = "";
-      for (var level_two in level_zero.faqs[level_one]) {
+      for (var l2 in l0.faqs[l1]) {
 
-        if (level_two === 'q_a') {
+        // Each q_a is a Question and Answer; loop through and print each one
+        // and it's text, tables and lists.
+        if (l2 === 'q_a') {
 
           $thumbnail_content += "<div class=\"thumbnail\">" ;
           $top_wrap_content  += "<div class=\"top-wrap\">";
 
-          for (var level_three in level_zero.faqs[level_one][level_two]) {
-            console.log('l3 key: ' + level_three);
-            console.log(level_zero.faqs[level_one][level_two][level_three]);
+          for (var l3 in l0.faqs[l1][l2]) {
+            console.log('l3 key: ' + l3);
+            console.log(l0.faqs[l1][l2][l3]);
             console.log('\n');
 
-            if (level_three === 'question') { 
+            // Q: Question (the section header)
+            if (l3 === 'question') { 
 
               $thumbnail_content += "<div class=\"thumbnail-title\">";
-              $thumbnail_content +=   level_zero.faqs[level_one][level_two][level_three];
+              $thumbnail_content +=   l0.faqs[l1][l2][l3];
               $thumbnail_content += "</div>";
  
               $top_wrap_content  += "<div class=\"top-wrap description\">";
               $top_wrap_content  +=   "<span class=\"dancing-cursive big-q\">";
               $top_wrap_content  +=     "Q:";
               $top_wrap_content  +=   "</span>";
-              $top_wrap_content  += level_zero.faqs[level_one][level_two][level_three];
+              $top_wrap_content  += l0.faqs[l1][l2][l3];
               $top_wrap_content  += "</div>";
             }
 
-            if (level_three === 'answer') {
+            // A: The first phrase or sentence of an answer.
+            if (l3 === 'answer') {
 
               $thumbnail_content += "<div class=\"thumbnail-descr\">";
-              $thumbnail_content += level_zero.faqs[level_one][level_two][level_three];
+              $thumbnail_content += l0.faqs[l1][l2][l3];
               $thumbnail_content += "</div>";
 
               $top_wrap_content  +=   "<span class=\"dancing-cursive big-a\">";
               $top_wrap_content  +=     "A: ";
               $top_wrap_content  +=   "</span>";
-              $top_wrap_content  += level_zero.faqs[level_one][level_two][level_three];
+              $top_wrap_content  += l0.faqs[l1][l2][l3];
            
             }
 
-            if (level_three === 'answer_p') {
+            // A: The rest of the answer text
+            if (l3 === 'answer_p') {
               $top_wrap_content  += "<p>";
-              $top_wrap_content  +=   level_zero.faqs[level_one][level_two][level_three];
+              $top_wrap_content  +=   l0.faqs[l1][l2][l3];
               $top_wrap_content  += "</p>";
             }        
 
-            if (level_three === 'answer_ol') {
+            // An ordered list in an answer.
+            if (l3 === 'answer_ol') {
               $top_wrap_content  += "<ol>";
 
-              for (var level_four in level_zero.faqs[level_one]
-              [level_two][level_three]) {
+              for (var level_four in l0.faqs[l1]
+              [l2][l3]) {
 
-                var list_item = level_zero.faqs[level_one]
-                [level_two][level_three][level_four].li;            
+                var list_item = l0.faqs[l1]
+                [l2][l3][level_four].li;            
                
                 $top_wrap_content  += "<li>";
                 $top_wrap_content  +=   list_item;
@@ -73,21 +79,21 @@ jQuery(document).ready( function($){
               $top_wrap_content  += "</ol>";
             } 
 
-            // print table 
-            if (level_three === 'answer_table') {
+            // A table in an answer.
+            if (l3 === 'answer_table') {
 
               // table start
               var row_type = "header";
               $top_wrap_content  += "<table style=\"width:50%\">"
 
               // iterate through each table row (key, value) and print it
-              for (var level_four in level_zero.faqs[level_one]
-              [level_two][level_three]) {
+              for (var level_four in l0.faqs[l1]
+              [l2][l3]) {
 
                 // use simple var names instead of long array indices
                 var this_key = level_four; 
-                var this_value = level_zero.faqs[level_one]
-                [level_two][level_three][level_four];                
+                var this_value = l0.faqs[l1]
+                [l2][l3][level_four];                
 
                 // print header row...
                 if (row_type === "header") {
@@ -121,7 +127,7 @@ jQuery(document).ready( function($){
             } 
 
             // print list (formatted as two columns) to html.
-            if (level_three === 'two_column_list') {
+            if (l3 === 'two_column_list') {
               
               // table start on the top left row... 
               var which_side = "left";
@@ -129,11 +135,11 @@ jQuery(document).ready( function($){
 
               // print in this order: row1-columnleft, row1-columnright,
               // row2-columnleft, etc.
-              for (var level_four in level_zero.faqs[level_one]
-              [level_two][level_three]) {
+              for (var level_four in l0.faqs[l1]
+              [l2][l3]) {
 
-                var this_cell = level_zero.faqs[level_one]
-                [level_two][level_three][level_four].li;
+                var this_cell = l0.faqs[l1]
+                [l2][l3][level_four].li;
                 
                 if (which_side === "left")  { 
                   $top_wrap_content  += "<tr>";
@@ -163,17 +169,19 @@ jQuery(document).ready( function($){
 
         }
 
+        // write content stored to the html file that called this JQuery function.
+        // This will be written to the thumbnails.
         $('#thumbnail-wrap-faqs').each( function (){
           $("#thumbnail-wrap-faqs").append($thumbnail_content);
         }); 
 
+        // write content stored to the html file that called this JQuery function.
+        // This will be written to the large wrap with the detailed answers, tables, lists.
         $('#banner-faqs').each( function (){
           $("#banner-faqs").append($top_wrap_content);
         });
 
       }
-
-
 
     }
 
