@@ -23,7 +23,7 @@ $body-bg: #B89300;
 $light-blue-bg: #13747D; /* light blue */
 $forest-green-bg: #668C4D;
 $wrap-highlight: #83555E; /* reddish */
-$button-border: #FFFFFF;
+$button-border: #333333;
 $big-q-color: #56416C;
 $big-a-color: #FFF7C0;
 
@@ -134,6 +134,7 @@ body {
     font-family: 'Lucida Grande';
     text-transform: uppercase;
     border-radius: $wrap-corner;
+
   }
 
   .thumbnail-descr {
@@ -146,6 +147,7 @@ body {
     /* appearance */
     font-family: helvetica neue;
     font-size: 10pt; 
+    transition: all 200ms ease-in-out;
 
   } 
 
