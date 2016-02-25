@@ -6,7 +6,7 @@ jQuery(document).ready( function($){
     var l0 = YAML.eval(file_content);
     console.log('\n');
 
-    $faq_number         = 0;
+    $faq_number = 0;
     for (var l1 in l0.faqs) {
 
       $thumbnail_content = "";
