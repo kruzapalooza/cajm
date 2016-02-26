@@ -10,19 +10,14 @@ jQuery(document).ready( function($){
     $top_wrap_content  = "";
 
     for (var l1 in l0.laws) {
-      console.log(l1);
-      console.log(l0.laws[l1]);
 
-      for (var l2 in l0.laws[l1]) {
-        console.log(l1);
-        console.log(l0.laws[l1][l2]);      
-      }  
+      console.log(l1);
+      console.log(l0.laws[l1].article);
+
     }
 
   }
   });
-
-
 
 });
 

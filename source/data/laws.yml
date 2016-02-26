@@ -1,14 +1,19 @@
 laws:
-    -   preamble: 
-            content: "CAJM is an organization composed of religious congregations and other community organizations.  Our member organizations, of diverse racial, religious, and economic backgrounds, pledge to work together to research and conduct public education to address the root causes of poverty and injustice, through the empowerment of marginalized people."
+    -   article: "CAJM is an organization composed of religious congregations and other community organizations. Our member organizations, of diverse racial, religious, and economic backgrounds, pledge to work together to research and conduct public education to address the root causes of poverty and injustice, through the empowerment of marginalized people."
+    -   article:
+            titl: "Incorporation"
+            section_ol:
+            - li: "The name of this organization shall be “Charleston Area Justice Ministry (CAJM)”. 
+            - li: "CAJM shall be a non-profit corporation, established in accordance with section 501 (c)(3) of the Tax Code of the Internal Revenue Service and the laws of the State of South Carolina."
+            - li: "Authority is vested in the Annual Assembly, which is the ultimate decision-making body for the organization which delegates authority and responsibility between meetings to the Leadership Senate."
     -   article: 
-        titl: "Incorporation"
-        section_ol:
-        -   section: The name of this organization shall be “Charleston Area Justice Ministry (CAJM)”. 
-        -   section: "CAJM shall be a non-profit corporation, established in accordance with section 501 (c)(3) of the Tax Code of the Internal Revenue Service and the laws of the State of South Carolina."
-        -   section: "Authority is vested in the Annual Assembly, which is the ultimate decision-making body for the organization which delegates authority and responsibility between meetings to the Leadership Senate."
-    -   article: 
-        titl: "Affiliation"
-        section_ol:
-        -   section: "CAJM shall maintain an affiliation with the Direct Action and Research Training Center, Inc. (DART)." 
-        -   section: "CAJM shall rely on DART to provide training and consulting support for CAISC leaders and to recruit and train new organizing staff."
+            titl: "Affiliation with DART"
+            section_ol:
+            - li: "CAJM shall maintain an affiliation with the Direct Action and Research Training Center, Inc. (DART)." 
+            - li: "CAJM shall rely on DART to provide training and consulting support for CAISC leaders and to recruit and train new organizing staff."
+    -   article:
+            titl: "Membership"
+            section: "Congregations become member organizations of CAJM after subscribing to the following covenant: _______ (name of the congregation), enters into a covenant with CAJM for the purpose of more successfully practicing our values in our community by:"
+            section_ol:
+            - li: "Building a Justice Ministry Network in our congregation."
+            - li: "Engaging in a listening process, training leaders, developing solutions, and taking action to improve community conditions."
