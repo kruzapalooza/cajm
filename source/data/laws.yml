@@ -1,5 +1,6 @@
 laws:
-    -   article: "CAJM is an organization composed of religious congregations and other community organizations. Our member organizations, of diverse racial, religious, and economic backgrounds, pledge to work together to research and conduct public education to address the root causes of poverty and injustice, through the empowerment of marginalized people."
+    -   article: 
+            preamble: "CAJM is an organization composed of religious congregations and other community organizations. Our member organizations, of diverse racial, religious, and economic backgrounds, pledge to work together to research and conduct public education to address the root causes of poverty and injustice, through the empowerment of marginalized people."
     -   article:
             titl: "Incorporation"
             section_ol:
