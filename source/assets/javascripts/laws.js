@@ -40,9 +40,11 @@ jQuery(document).ready( function($){
         $top_wrap_content  += "</div>"
       }
 
-      if (l0.laws[l1].article.section_ol) {
-        $top_wrap_content  +=  l0.laws[l1].article.section_ol ;
-      }
+      if (l0.laws[l1].article.section) {
+        $top_wrap_content  += "<p>" ;
+        $top_wrap_content  +=   l0.laws[l1].article.section ;
+        $top_wrap_content  += "</p>" ;        
+      }      
 
       $top_wrap_content  += "</div>" ;
 
