@@ -485,16 +485,22 @@ body {
 
       ol {
         margin-left: 35px;
-        color: $text-gray;
+        color: $text-white;
         li:before {
             content: ""; /* Insert content that looks like bullets */
             padding-right: 8px;
           }
       }
 
+      ol ol {
+        color: $text-gray;
+        list-style-type: lower-alpha;
+        font-style: italic;
+      }
+
       p {
         margin-left: 20px;
-        color: $text-gray;
+        color: $text-white;
       }
 
       table {
@@ -651,4 +657,28 @@ site examples:;
     - clear action links, photos of people in background, FB, TW links
   - www.fightthetpp.org
     - short message (not long email/letter) and action you're asking them to take
+
+    Check your site's optimization by channel: http://smo.knowen.com;
+
+good registrars: name.com, joker.com, gandi.net;
+
+letsencrpt.org (certs for nonprofit)
+startcom.com (certs for private)
+
+TorBrowser (visit websites anonymously)
+
+HOSTING SERVICES:
+- digitalocean.com
+- flywheel
+- wpengine
+- singlehop 
+- electricembers
+- sonic.net
+- media temple
+
+contributions, selling items:
+- willcommerce
+
+
+
 */
