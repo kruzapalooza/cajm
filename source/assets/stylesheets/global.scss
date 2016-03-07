@@ -29,12 +29,12 @@ $big-a-color: #FFF7C0;
 
 $title-bg: #000000;
 $graphic-bg: #333333; /* same as wrap bg */
-$top-wrap-bg: #84ABAA;
-$links-bg: #6B3162;
+$top-wrap-bg: #1F1F20;
+$links-bg: #EBD8B7;
 $links: #77CCA4;
 $text-bg: #000000;
-$descr-bg: #C5CEAE;
-$text-white: #FFFFFF;
+$descr-bg: #1F1F20;
+$text-white: #FEFEEB;
 $text-gray: #333333;
 $text-black: #000000;
 $facebook-blue: #012677;
@@ -117,6 +117,11 @@ body {
     color: #000000;
     border-radius: $wrap-corner;
     box-shadow: inherit;
+  }
+
+  .long {
+    width: $thumbnail-width * 2.5; 
+    height: $thumbnail-height;
   }
 
   .thumbnail-title {
@@ -296,7 +301,7 @@ body {
       display: block;
       position: relative;
       padding: 0px;
-      margin: 0px;
+      margin: 0 auto;
 
       /* appearance */
       color: $text-white;
@@ -383,7 +388,7 @@ body {
     position: relative;
     margin: 5px;
     padding: 5px;
-    width: 99%;
+    width: 100%;
     height: auto;
 
     /* appearance */
@@ -414,24 +419,11 @@ body {
       color: $text-white;
     }
 
-    .graphic {
-      /* position */
-      float: left;
-      width: 20%;
-      height: auto;
-      margin: $wrap-margin;
-      padding: ($wrap-padding + 5px) $wrap-padding $wrap-padding ($wrap-padding + 15px);
-
-      /* appearance */
-      background: $graphic-bg;
-      border-radius: $wrap-corner;
-    }
-
     .top-wrap {
       /* position */
       display: inline;
-      float: right;
-      width: 76%;
+      float: left;
+      width: 99%;
       height: 75%;
       margin: $wrap-margin;
       padding: $wrap-padding;
@@ -447,7 +439,7 @@ body {
         h2 {
           font-family: "Dancing Script";
           font-size: 24pt; 
-          color: $text-gray;
+          color: $text-white;
           text-align: center;
 
         }
@@ -456,7 +448,7 @@ body {
           font-style: italic;
           font-size: 12pt; 
           text-transform: uppercase;
-          color: $text-gray;
+          color: $text-white;
           text-align: center;
         }
       }
@@ -493,7 +485,7 @@ body {
       }
 
       ol ol {
-        color: $text-gray;
+        color: $text-white;
         list-style-type: lower-alpha;
         font-style: italic;
       }
@@ -528,7 +520,7 @@ body {
 
       .description {
         /* position */
-        width: 99%;
+        width: 96%;
         height: 65%;
         margin: $wrap-margin $wrap-margin ($wrap-margin + 5px) $wrap-margin;
         padding: $wrap-padding; 
@@ -569,19 +561,18 @@ body {
       }
 
       .links {
-        /* position */
         width: 20%;
+        min-width: 225px;
         height: 28%;
-        margin: ($wrap-margin + 5px) $wrap-margin $wrap-margin $wrap-margin;
+        margin: 0 auto;
+        /*margin: ($wrap-margin + 5px) $wrap-margin $wrap-margin $wrap-margin;*/
         padding: ($wrap-padding + 5px) $wrap-margin $wrap-margin $wrap-margin;
 
         /* appearance */
         background: $links-bg;
         border-radius: $wrap-corner;  
+        text-transform: uppercase;
       }
-
-
-
     }
   }
 
@@ -659,6 +650,10 @@ site examples:;
     - short message (not long email/letter) and action you're asking them to take
 
     Check your site's optimization by channel: http://smo.knowen.com;
+
+Check donate link for functionality
+
+LIST OF PAGES TO PUT ON... or leave out.
 
 good registrars: name.com, joker.com, gandi.net;
 
