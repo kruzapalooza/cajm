@@ -174,7 +174,7 @@ footer {
 /* beige */
 /* grayish 1 */
 /* grayish 2 */
-/* line 52, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+/* line 54, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
 body {
   /* position */
   position: relative;
@@ -190,20 +190,20 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   box-shadow: 2px -2px 10px #111111; }
-  /* line 67, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+  /* line 69, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
   body .screen_wide_spacer {
     /* TECH NOTE: Is there a better solution */
     /* transparent spacer, e.g., btw fixed header and other body elements */
     position: relative;
     width: 98%;
     height: 72px; }
-  /* line 74, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+  /* line 76, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
   body .anchor {
     display: block;
     position: relative;
     top: -72px;
     visibility: hidden; }
-  /* line 81, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+  /* line 83, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
   body .thumbnail-wrap {
     /* position */
     float: left;
@@ -217,13 +217,13 @@ body {
     background: transparent;
     box-shadow: inherit;
     /* avoid the great collapse */ }
-    /* line 96, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+    /* line 98, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
     body .thumbnail-wrap:after {
       content: "";
       display: block;
       height: 0;
       clear: both; }
-  /* line 104, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+  /* line 106, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
   body .thumbnail {
     /* position */
     display: block;
@@ -235,16 +235,16 @@ body {
     height: 175px;
     overflow-y: auto;
     /* appearance */
-    background: #ED6639;
+    background-color: #333333;
     font-size: 15px;
     color: #000000;
     border-radius: 5px;
     box-shadow: inherit; }
-  /* line 123, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+  /* line 125, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
   body .long {
     width: 437.5px;
     height: 175px; }
-  /* line 128, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+  /* line 130, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
   body .thumbnail-title {
     /* position */
     display: block;
@@ -252,14 +252,14 @@ body {
     margin: 5px;
     padding: 5px;
     /* appearance */
-    background-color: #333333;
+    background: #ED6639;
     color: #FFFFFF;
     font-size: 9pt;
     transition: all 250ms linear;
     font-family: 'Lucida Grande';
     text-transform: uppercase;
     border-radius: 5px; }
-  /* line 146, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+  /* line 148, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
   body .thumbnail-descr {
     /* position */
     display: block;
@@ -267,10 +267,11 @@ body {
     padding: 0px;
     margin: 0px;
     /* appearance */
+    color: #FFFFFF;
     font-family: helvetica neue;
     font-size: 10pt;
     transition: all 200ms ease-in-out; }
-  /* line 160, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+  /* line 163, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
   body .social-media-item {
     /* position */
     display: block;
@@ -280,14 +281,14 @@ body {
     /* appearance */
     color: #FFFFFF;
     font-size: 4px; }
-    /* line 171, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+    /* line 174, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
     body .social-media-item ul {
       /* position */
       display: block;
       position: relative;
       padding: 0px;
       margin: 0px; }
-      /* line 179, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 182, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .social-media-item ul li {
         /* position */
         position: relative;
@@ -299,7 +300,7 @@ body {
         padding: 0px;
         text-align: center;
         border-radius: 40px; }
-        /* line 191, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+        /* line 194, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
         body .social-media-item ul li a.facebook {
           /* position */
           position: relative;
@@ -321,10 +322,10 @@ body {
           border-radius: 40px;
           text-decoration: none;
           transition: all 200ms ease-in-out; }
-          /* line 214, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+          /* line 217, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
           body .social-media-item ul li a.facebook:hover {
             width: 100%; }
-          /* line 218, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+          /* line 221, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
           body .social-media-item ul li a.facebook:after {
             /* position */
             position: absolute;
@@ -342,10 +343,10 @@ body {
             font-size: 12pt;
             background: #012677;
             transition: all 100ms linear; }
-          /* line 238, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+          /* line 241, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
           body .social-media-item ul li a.facebook:hover:after {
             top: 0%; }
-        /* line 243, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+        /* line 246, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
         body .social-media-item ul li a.twitter {
           /* position */
           position: relative;
@@ -367,10 +368,10 @@ body {
           border-radius: 40px;
           text-decoration: none;
           transition: all 200ms ease-in-out; }
-          /* line 266, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+          /* line 269, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
           body .social-media-item ul li a.twitter:hover {
             width: 100%; }
-          /* line 270, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+          /* line 273, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
           body .social-media-item ul li a.twitter:after {
             /* position */
             position: absolute;
@@ -388,10 +389,10 @@ body {
             font-size: 12pt;
             background: #45ADA8;
             transition: all 100ms linear; }
-          /* line 290, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+          /* line 293, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
           body .social-media-item ul li a.twitter:hover:after {
             top: 0%; }
-  /* line 300, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+  /* line 303, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
   body .button-link {
     /* position */
     display: block;
@@ -401,14 +402,14 @@ body {
     /* appearance */
     color: #FFFFFF;
     font-size: 4px; }
-    /* line 311, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+    /* line 314, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
     body .button-link ul {
       /* position */
       display: block;
       position: relative;
       padding: 0px;
       margin: 0px; }
-      /* line 318, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 321, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .button-link ul li {
         /* position */
         position: relative;
@@ -419,7 +420,7 @@ body {
         margin: 0px;
         padding: 0px;
         text-align: center; }
-        /* line 329, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+        /* line 332, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
         body .button-link ul li a {
           /* position */
           position: relative;
@@ -437,7 +438,7 @@ body {
           border: 1px solid #333333;
           border-radius: 5px;
           text-decoration: none; }
-          /* line 348, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+          /* line 351, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
           body .button-link ul li a span {
             /* position */
             float: left;
@@ -445,8 +446,8 @@ body {
             margin: 0;
             z-index: 5;
             position: relative;
-            color: black; }
-          /* line 358, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+            color: #FFFFFF; }
+          /* line 361, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
           body .button-link ul li a:after {
             /* position */
             position: absolute;
@@ -459,13 +460,13 @@ body {
             width: 100%;
             height: 100%;
             transition: all 100ms linear; }
-          /* line 373, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+          /* line 376, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
           body .button-link ul li a:hover:after {
             top: 0%; }
-          /* line 377, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+          /* line 380, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
           body .button-link ul li a:hover {
             color: gray; }
-  /* line 386, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+  /* line 389, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
   body .banner {
     /* position */
     display: block;
@@ -479,13 +480,13 @@ body {
     /* box-shadow: 2px -2px 10px #111111; */
     border-radius: 5px;
     /* avoid the great collapse */ }
-    /* line 401, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+    /* line 404, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
     body .banner:after {
       content: "";
       display: block;
       height: 0;
       clear: both; }
-    /* line 408, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+    /* line 411, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
     body .banner .banner-title {
       /* position */
       width: 99%;
@@ -499,7 +500,7 @@ body {
       font-family: "Arial";
       font-size: 28px;
       color: #FFFFFF; }
-    /* line 424, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+    /* line 427, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
     body .banner .top-wrap {
       /* position */
       display: inline;
@@ -514,13 +515,13 @@ body {
       border-radius: 5px;
       box-shadow: 2px -2px 10px #111111;
       font-family: Arial; }
-      /* line 441, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 444, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .banner .top-wrap .dancing-cursive h2 {
         font-family: "Dancing Script";
         font-size: 24pt;
         color: #FFFFFF;
         text-align: center; }
-      /* line 448, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 451, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .banner .top-wrap .dancing-cursive h3 {
         font-family: Arial;
         font-style: italic;
@@ -528,14 +529,14 @@ body {
         text-transform: uppercase;
         color: #FFFFFF;
         text-align: center; }
-      /* line 458, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 461, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .banner .top-wrap .dancing-cursive.big-q {
         font-family: "Dancing Script";
         color: #56416C;
         font-size: 24pt;
         text-align: left;
         margin-right: 1rem; }
-      /* line 466, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 469, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .banner .top-wrap .dancing-cursive.big-a {
         font-family: "Dancing Script";
         color: #FFF7C0;
@@ -543,53 +544,53 @@ body {
         text-align: left;
         margin-left: 1rem;
         margin-right: 1rem; }
-      /* line 475, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 478, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .banner .top-wrap h2 {
         font-size: 15pt;
         font-family: Arial;
         color: #333333; }
-      /* line 481, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 484, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .banner .top-wrap ol {
         margin-left: 35px;
         color: #FFFFFF; }
-        /* line 484, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+        /* line 487, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
         body .banner .top-wrap ol li:before {
           content: "";
           /* Insert content that looks like bullets */
           padding-right: 8px; }
-      /* line 490, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 493, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .banner .top-wrap ol ol {
         color: #FFFFFF;
         list-style-type: lower-alpha;
         font-style: italic; }
-      /* line 496, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 499, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .banner .top-wrap p {
         margin-left: 20px;
         color: #FFFFFF;
         margin-bottom: 20px; }
-      /* line 502, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 505, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .banner .top-wrap table {
         width: 100%;
         margin: 10px; }
-      /* line 506, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 509, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .banner .top-wrap table, body .banner .top-wrap th, body .banner .top-wrap td {
         border: 1px solid #048091;
         border-collapse: collapse; }
-      /* line 510, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 513, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .banner .top-wrap th, body .banner .top-wrap td {
         padding: 5px;
         text-align: left; }
-      /* line 514, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 517, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .banner .top-wrap table tr:nth-child(even) {
         background-color: #919167; }
-      /* line 517, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 520, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .banner .top-wrap table tr:nth-child(odd) {
         background-color: #CDBDAE; }
-      /* line 520, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 523, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .banner .top-wrap table th {
         background-color: black;
         color: white; }
-      /* line 525, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 528, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .banner .top-wrap .description {
         /* position */
         width: 99%;
@@ -599,7 +600,7 @@ body {
         /* appearance */
         background: #000000;
         border-radius: 5px; }
-        /* line 536, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+        /* line 539, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
         body .banner .top-wrap .description .text-descr {
           /* position */
           float: left;
@@ -613,7 +614,7 @@ body {
           font-family: "Arial";
           font-size: 10px;
           color: #00004C; }
-        /* line 552, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+        /* line 555, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
         body .banner .top-wrap .description .graphic-right {
           /* position */
           float: right;
@@ -624,7 +625,7 @@ body {
           padding: 10px 5px 5px 20px;
           background: #333333;
           border-radius: 5px; }
-      /* line 567, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
+      /* line 570, /Users/mkruza/cajm/source/assets/stylesheets/global.scss */
       body .banner .top-wrap .links {
         width: 20%;
         min-width: 225px;

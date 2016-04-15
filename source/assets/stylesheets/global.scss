@@ -26,6 +26,8 @@ $wrap-highlight: #83555E; /* reddish */
 $button-border: #333333;
 $big-q-color: #56416C;
 $big-a-color: #FFF7C0;
+$thumbnail-descr-color: #FFFFFF;
+$button-link-text-color: #FFFFFF;
 
 $title-bg: #000000;
 $graphic-bg: #333333; /* same as wrap bg */
@@ -113,7 +115,7 @@ body {
     overflow-y: auto;
     
     /* appearance */
-    background: $light-blue-bg; 
+    background-color: $text-gray;
     font-size: 15px;
     color: #000000;
     border-radius: $wrap-corner;
@@ -133,7 +135,7 @@ body {
     padding: 5px;
 
     /* appearance */
-    background-color: $text-gray;
+    background: $light-blue-bg;
     color: #FFFFFF;
     font-size: 9pt;
     transition: all 250ms linear;
@@ -151,6 +153,7 @@ body {
     margin: 0px;
 
     /* appearance */
+    color: $thumbnail-descr-color;
     font-family: helvetica neue;
     font-size: 10pt; 
     transition: all 200ms ease-in-out;
@@ -351,8 +354,8 @@ body {
               padding: 0;
               margin: 0;
               z-index: 5;
-              position: relative;
-              color: black; 
+              position: relative; 
+              color: $button-link-text-color;
             } 
 
               &:after {
