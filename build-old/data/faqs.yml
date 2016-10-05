@@ -1,0 +1,138 @@
+faqs:
+    -   q_a: 
+            question: "What are CAJM's general goals?"      
+            answer: "The general goals of the Charleston Area Justice Ministry (CAJM) include:"        
+            answer_ol: 
+                - li: "To build strong relationships among religious congregations."
+                - li: "To develop a culture of accountability within CAJM and to hold public institutions accountable to address local community issues of concern to member congregations through a process of education research, action, and reflection."
+                - li: "To strengthen member congregations by training existing leaders in organizing skills, identifying new leaders, and building justice ministry networks."
+                - li: "To enable member congregations to act successfully on shared values of justice and fairness."    
+    -   q_a: 
+            question: "Which Congregations are Members of CAJM?"
+            answer: "Members of CAJM include..."
+            answer_p: "Clergy and lay leaders representing local congregations of faith communities in the Charleston Area (Charleston, Berkeley, and Dorchester Counties) who express interest in achieving the goals of CAJM and who make a financial investment. New congregations will be accepted into CAJM membership by majority vote of the CAJM Members present at a duly called meeting. The following congregations are members:"
+            two_column_list: 
+                - li:  "Bethel Presbyterian"
+                - li:  "Blessed Sacrament Catholic*"
+                - li:  "Calvary Baptist"
+                - li:  "Calvary Episcopal*"
+                - li:  "Charity Missionary Baptist*"
+                - li:  "Church of the Holy Communion*"
+                - li:  "Circular Congregational*"
+                - li:  "First Scots Presbyterian*"
+                - li:  "Graham AME*"
+                - li:  "Holy Trinity Windermere"
+                - li:  "Hope Assembly*"
+                - li:  "Kahal Kadosh Beth Elohim* "
+                - li:  "Morris Brown AME* "
+                - li:  "Morris St. Baptist  "  
+                - li:  "New Tabernacle Fourth Baptist* "
+                - li:  "Nichols Chapel AME*  "                   
+                - li:  "North Charleston United Methodist* "
+                - li:  "Second Presbyterian*  "                    
+                - li:  "St. Francis Episcopal* "
+                - li:  "St. James Presbyterian* " 
+                - li:  "St. John Catholic* "
+                - li:  "St. Matthew Baptist* " 
+                - li:  "Mt. Zion AME* "
+                - li:  "St. Peter’s AME* "
+                - li:  "Unitarian Church in Charleston* "
+                - li:  "Wallingford Presbyterian*"
+                - li:  "YMCA of Charleston*" 
+    -   q_a:
+            question: "What faith communities support CAJM?"
+            answer: "Clergy and laity from more than a dozen faith communities, including..."
+            two_column_list:
+                - li:  "African Methodist Episcopal (AME)"
+                - li:  "Baptist"
+                - li:  "Anglican"
+                - li:  "Episcopal"
+                - li:  "Greek Orthodox"
+                - li:  "Lutheran"
+                - li:  "Orthodox Union of Judaism"
+                - li:  "Presbyterian"
+                - li:  "Roman Catholic"
+                - li:  "Union of Reform Judaism"
+                - li:  "Unitarian"
+                - li:  "United Methodist"
+    -   q_a:
+            question: "What Happened at the Community Problems Assembly on 11/16/2015?"
+            answer: "CAJM congregations packed the house, with 617 in attendance..."
+            answer_p: "Blessed Sacrament Catholic Church, CAJM had 552 voting Network Members, the voting went as follows: Racial Discrimination, with 349 votes (63% of all votes), will be the problem area that we focus on this justice cycle. Public Transportation received 135 votes and Affordable Housing received 68 votes. It was put to the gathered body, and unanimously passed, that we would also continue to work on juvenile incarceration by focusing on school-based arrests. Thank you to everyone who made their voices heard by being a part of the Community Problems Assembly!"
+            answer_p: "Another very exciting part of the evening was that we welcomed three new member congregations/organizations! The YWCA of Charleston, St. Francis Episcopal, and Bethel Presbyterian have all joined our ranks and that growth is wonderful to see. Those in attendance also voted to install new CAJM Board Members whose terms begin January 1, 2016."
+    -   q_a:
+            question: "What Happened at the CAJM Research Kick-Off on 12/7/2015?"
+            answer: "At St. James Presbyterian over 150 people attended the Research Kick-off..."
+            answer_p: "They came out ready to engage in great research over these next couple of months! Racial Discrimination was the issue voted as the subject for the Nehemiah Action scheduled for April 18, 2016."
+            answer_p: "Those people that attended had an opportunity to sign up for the committee on which they wanted to serve. The active committee options were: Racial Discrimination, School Based Arrests, PBIS & Restorative Justice, and the Hiring Policy."
+            answer_p: "Research visits have started."
+    -   q_a: 
+            question: "What Happened at the CAJM Team Assembly on October 26, 2015?"
+            answer: "What an amazing Team Assembly tonight!"
+            answer_p: "There was so much energy and excitement as we heard reports from the house meetings about the very serious community problems raised. After sharing, the voting was narrowed down into several broad categories under the Issue column below. One hundred Team Leaders voted on behalf of their house meetings and Network Members and the voting results were as follows:"
+            answer_table: 
+                Issue: Votes
+                Domestic_Violence: 0
+                Education: 6
+                Affordable_Housing: 19
+                Gun_Violence: 0
+                Public_Transportation: 12
+                Substance_Abuse_Addiction: 0
+                Mental_Health: 5
+                Criminal_Justice_System: 0 
+    -   q_a:
+            question: "What if my congregation is not a member of CAJM?"
+            answer: "If your congregation is interested in joining CAJM..."
+            answer_p: "Please have the clergy contact Ms. Treva Williams, CAJM Lead Organizer at Treva@thedartcenter.org or mobile 620-704-1062.  If your congregation is not a member, and you are personally interested in getting involved, please come to our next meeting!  We welcome all who want to work for justice."
+    -   q_a:
+            question: "What is the CAJM Celebration?"
+            answer: "Everyone is invited to celebrate the successes and progress of CAJM so far..."
+            answer_p: " and invited to invest at least $200 or more to kick-off the Investment Drive to keep CAJM self-sustaining moving forward."
+    -   q_a:
+            question: "What is the CAJM Community Problems Assembly?"
+            answer: "The Assembly has four goals:"
+            answer_ol: 
+                - li: "Team leaders, clergy, and network members come together to share testimonies then vote for one of the top 3 issues identified at the Team Assembly II to be worked on this cycle."
+                - li: "New congregations are officially covenanted."
+                - li: "To strengthen member congregations by training existing leaders in organizing skills, identifying new leaders, and building justice ministry networks."
+                - li: "Nominees for the Executive Board are processed."    
+    -   q_a:
+            question: "What is the CAJM Nehemiah Action?"
+            answer: "Everyone is invited to come and bring at least three other people with them... "
+            answer_p: "to powerfully gain commitments from the public official(s) invited to implement CAJM's well researched plan of action to solve serious community issues."
+    -   q_a:
+            question: "What is the CAJM Rally?"
+            answer: "Team leaders, clergy, and network members across DART rally together..."
+            answer_p: " and get fired up about the final results of the research, the plan of action chosen, and the public official(s) identified to come to the large Nehemiah Action so they can go out and excitedly invite at least 3 other people to come."
+    -   q_a:
+            question: "What is the CAJM Research-to-Action Kick-Off?" 
+            answer: "Team leaders, clergy, and network members involved in the research process..."
+            answer_p: " come together to learn about the current issue work CAJM is undertaking and the strategy, breaking out into specific research committees."
+    -   q_a:
+            question: "What is the CAJM Team Assembly II?"
+            answer: "Team leaders across CAJM come together to report on the intimate house meetings they hosted (over 100 total) ... "
+            answer_p: "where people discussed the problems they face in their personal life and the community, identifying the top 3 to be voted on later for research and action by the entire CAJM network."
+    -   q_a:
+            question: "What is the DART Clergy Conference?"
+            answer: "Clergy and lay leaders across the DART network come together..."
+            answer_p: " to re-center themselves around the Scriptural call to do justice."
+    -   q_a: 
+            question: "What is the DART Research-to-Action Advanced Leaders Training Institute?"
+            answer: "Team leaders and clergy come together..."
+            answer_p: "to train on how to break down identified issues into specific winnable solutions and gain the commitment of responsible public officials."
+    -   q_a:
+            question: "What is the mission of CAJM?"
+            answer: "The Charleston Area Justice ministry (CAJM) shall build ..."
+            answer_p: "a powerful capability to negotiate the interests of our community and be committed to doing justice.  CAJM is comprised of a diverse group of religious congregations.  Having been founded by religious congregations, CAJM is based on the values of justice and compassion as shared values of our faith traditions."
+    -   q_a:
+            question: "What justice problems are there in the Charleston area?"
+            answer: "The Charleston area includes..."
+            answer_p: "Charleston (population 665,000), Berkeley (population 178,000), and Dorchester (population 137,000) Counties. Using Charleston County as an example, over 16% of the population is below the poverty level, unemployment is above 9%, illiteracy is 14%, and 19% are uninsured.  Conversations among the clergy and laity have identified justice problems in education, housing, unemployment, crime, health care, addiction, incarceration policy, and others.  CAJM congregations have a strong desire to build relationships across racial, cultural, religious, and geographic barriers in order to powerfully address justice problems in the Charleston area."
+    -   q_a:
+            question: "Who may attend CAJM meetings?"
+            answer: "We invite all persons who are interested in developing a powerful justice ministry in the Charleston area."
+            answer_p: "(Charleston, Berkeley, and Dorchester Counties) and elsewhere to attend Charleston Area Justice Ministry (CAJM) meetings.  Please feel free to extend this invitation to other clergy and lay people."
+    -   q_a:
+            question: "Who does CAJM work with to achieve its goals?"
+            answer: "CAJM works with the Direct Action and Research Training Center (DART,) Inc."
+            answer_p: "The DART Lead Community Organizer, Ms. Treva Williams, facilitates CAJM's ministry.  DART is committed to building powerful, diverse, congregation-based and democratically-run organizations capable of winning justice on issues facing the community. Since 1982, DART has built and strengthened over twenty locally affiliated organizations in five states and trained over 10,000 community leaders and 150 professional Community Organizers." 

@@ -120,6 +120,19 @@ body {
     color: #000000;
     border-radius: $wrap-corner;
     box-shadow: inherit;
+
+    span {
+      color: $text-white;
+      font-size: 12px;
+    }
+  }
+
+  .perfect-fit {
+    float: left;
+    min-height: 40% ;
+    max-width:  40%;
+    max-height: 95%;
+    max-width:  95%;
   }
 
   .long {
